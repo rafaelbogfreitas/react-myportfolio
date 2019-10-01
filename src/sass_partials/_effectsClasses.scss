@@ -1,0 +1,18 @@
+
+//used with Jquery for changing the styles of the 'show-more' button
+.highlight{
+  background: $secondary-color;
+  color:$backgrounds-color;
+  opacity: 0.6;
+}
+
+//highlights the current section on the NAV
+.selected{
+  color:$secondary-color;
+  transform: scale(1.1);
+}
+
+//stop displaying an element
+.hidden{
+  display:none;
+}
