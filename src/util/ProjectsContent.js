@@ -49,7 +49,7 @@ const ProjectsContent = [
         
         href: 'www.rafaelfreitas.co.uk',
         
-        linkGitHub:'https://github.com/rafaelbogfreitas/webSitePortfolio',
+        linkGitHub:`https://github.com/rafaelbogfreitas/react-myportfolio`,
         
         extraLink: false,
         

@@ -40,8 +40,8 @@ class Nav extends Component {
                 </div>
               </li>
               <li id="intro-btn"class={this.state.iconOpen ? 'show' : ''}><NavLink exact to='/'>Home</NavLink></li>
-              <li id="about-btn"class={this.state.iconOpen ? 'show' : ''}><NavLink to='/about'>About Me</NavLink></li>
-              <li id="projects-btn"class={this.state.iconOpen ? 'show' : ''}><NavLink to='/projects'>My Projects</NavLink></li>
+              <li id="about-btn"class={this.state.iconOpen ? 'show' : ''}><NavLink to='/about'>About</NavLink></li>
+              <li id="projects-btn"class={this.state.iconOpen ? 'show' : ''}><NavLink to='/projects'>Projects</NavLink></li>
               <li id="contact-btn"class={this.state.iconOpen ? 'show' : ''}><NavLink to='/contact'>Contact</NavLink></li>
             </ul>
             <div className="content">

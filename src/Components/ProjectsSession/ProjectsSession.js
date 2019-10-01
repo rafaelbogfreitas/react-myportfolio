@@ -9,7 +9,7 @@ class ProjectsSession extends Component {
     render() { 
         return ( 
             <div className='projects'>
-                <h1>My Projects</h1>
+                <h1>Projects</h1>
                 {ProjectsContent.map(a => <Projects content={a} />)}
             </div>
          );

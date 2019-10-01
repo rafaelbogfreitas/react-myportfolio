@@ -10,7 +10,7 @@ class About extends Component {
         return ( 
             <div className="about">
                 <div className="about-wrap">
-                    <h1>About Me</h1>
+                    <h1>About</h1>
                     {AboutContent.map(a => <p key={AboutContent.indexOf(a)}>{a}</p>)}
                 </div>
                 <Skills />
