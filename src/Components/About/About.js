@@ -11,7 +11,7 @@ class About extends Component {
             <div className="about">
                 <div className="about-wrap">
                     <h1>About</h1>
-                    {AboutContent.map(a => <p key={AboutContent.indexOf(a)}>{a}</p>)}
+                    {AboutContent.map((a, i) => <p key={i}>{a}</p>)}
                 </div>
                 <Skills />
             </div>

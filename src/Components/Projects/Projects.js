@@ -25,7 +25,7 @@ class Projects extends Component {
                 </a>
                 <div className="project-description">
                     <h2>{this.props.content.title}</h2>
-                    {this.props.content.paragraphs.map(a => <p>{a}</p>)}
+                    {this.props.content.paragraphs.map((a, i) => <p key={i}>{a}</p>)}
                     <p><nobr><span className="show-more" onClick={this.handleClick}>{this.state.hidden ? 'Show More +':'Show Less -'}</span></nobr></p>
 
                     <section className="more" style={this.state.hidden ? { 'display': 'none'} : { 'display': 'block'}}>
@@ -33,7 +33,7 @@ class Projects extends Component {
                         <aside>
                             <h3>Technologies used:</h3>
                             <ul>
-                                {this.props.content.technologies.map(a => <li>{a}</li>)}
+                                {this.props.content.technologies.map((a,i) => <li key={i}>{a}</li>)}
                             <li><a href={this.props.content.linkGitHub}>
                                 <i className="fab fa-github-square"></i>
                             </a></li>

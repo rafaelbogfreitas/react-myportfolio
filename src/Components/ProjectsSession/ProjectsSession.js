@@ -10,7 +10,7 @@ class ProjectsSession extends Component {
         return ( 
             <div className='projects'>
                 <h1>Projects</h1>
-                {ProjectsContent.map(a => <Projects content={a} />)}
+                {ProjectsContent.map((a, i) => <Projects key={i} content={a} />)}
             </div>
          );
     }

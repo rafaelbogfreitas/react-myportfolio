@@ -59,12 +59,16 @@
         }//media queries
   
         a {
-          padding:3%;
-          font-size: 1.4rem;
-          color:$secondary-color;
-          &:hover{
-            font-size: 1.6rem;
-            transition: font 0.2s;
+          i{
+            padding:3%;
+            font-size: 1.4rem;
+            color:$secondary-color;
+            &:hover{
+              // font-size: 1.6rem;
+              // transition: font 0.2s;
+              transform: scale(1.2);
+              transition: transform 0.3s linear;
+            }
           }
         }
       }

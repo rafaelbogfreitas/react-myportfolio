@@ -21,14 +21,14 @@ class SkillsSession extends Component {
                 <ul>
                     {this.props.content.hasAuthor ? 
                     this.props.content.books.filter(a => !a.reading)
-                    .map(a => <li>{a.title}<br /><span>{a.author}</span></li>) 
+                    .map((a, i) => <li key={i}>{a.title}<br /><span>{a.author}</span></li>) 
                     : null}
                 </ul>
                 <h3>Reading</h3>
                 <ul>
                     {this.props.content.hasAuthor ? 
                     this.props.content.books.filter(a => a.reading)
-                    .map(a => <li>{a.title}<br /><span>{a.author}</span></li>) 
+                    .map((a, i) => <li key={i}>{a.title}<br /><span>{a.author}</span></li>) 
                     : null}
                 </ul>
             </div>
@@ -37,7 +37,7 @@ class SkillsSession extends Component {
         let content = (
             <ul>
                 {(this.props.content.title !== 'Books') ? 
-                this.props.content.contents.map(a => <li><span>{a.title + ' '}</span>{a.body}</li>) :
+                this.props.content.contents.map((a,i) => <li key={i}><span>{a.title + ' '}</span>{a.body}</li>) :
                 null}
             </ul>
         );
