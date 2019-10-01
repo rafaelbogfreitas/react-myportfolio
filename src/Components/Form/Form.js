@@ -7,7 +7,7 @@ class Form extends Component {
         return ( 
           <div className="form-wrap">
             <h3>In a rush? Drop me a quick message!</h3>
-            <form className="" action="index.html" method="post" netlify>
+            <form className="" action="" method="post" netlify>
               <div className="form-section">
                 <input type="text" name="name" required/>
                 <label for="name">Name</label>
