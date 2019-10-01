@@ -19,5 +19,12 @@
     </head>
     <body>
         <div class="root"></div>
+
+        <!-- fix for netlify form submission on React -->
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+          </form>
     </body>
 </html>
