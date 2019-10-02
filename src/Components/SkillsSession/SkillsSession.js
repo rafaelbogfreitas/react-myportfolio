@@ -47,7 +47,7 @@ class SkillsSession extends Component {
         return ( 
             <div className="skills-section" onClick={this.handleClick}>
                 <h2 className="skills-title"><div className="text">{this.props.content.title}</div></h2>
-                <section className={this.state.open? 'skills-content' : 'skills-content hidden'}>
+                <section className={this.state.open ? 'skills-content' : 'skills-content hidden'}>
                     {!this.props.content.hasAuthor ? content : null}
                     {this.props.content.hasAuthor ? books: null}
                 </section>

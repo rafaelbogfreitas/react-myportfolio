@@ -69,7 +69,7 @@ const SkillsContents = [
         contents: [
             {
                 title:`Text Editor:`,
-                body:`Atom, Vim, Nano and Visual Studio Code`
+                body:`Atom, Visual Studio Code and Nano`
             }, 
             
             {
@@ -149,6 +149,12 @@ const SkillsContents = [
             {
                 title:`Pro Git`,
                 author:`Ben Straub and Scott Chacon`,
+                reading: true
+            },
+            
+            {
+                title:`Learning React O'Reilly`,
+                author:`Alex Banks & Eve Porcello`,
                 reading: true
             }
             

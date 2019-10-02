@@ -47,7 +47,7 @@ const ProjectsContent = [
     {
         title: 'Rafael Freitas Web Development - Portfolio',
         
-        href: 'www.rafaelfreitas.co.uk',
+        href: 'https://www.rafaelfreitas.co.uk/',
         
         linkGitHub:`https://github.com/rafaelbogfreitas/react-myportfolio`,
         
