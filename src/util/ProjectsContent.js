@@ -14,6 +14,8 @@ const ProjectsContent = [
 
         linkGitHub:'https://github.com/rafaelbogfreitas/jWebsiteDevEnv',
 
+        alt: 'pic of JWorldMusic front page',
+
         extraLink: true,
 
         imgSrc: img1,
@@ -50,6 +52,8 @@ const ProjectsContent = [
         href: 'https://www.rafaelfreitas.co.uk/',
         
         linkGitHub:`https://github.com/rafaelbogfreitas/react-myportfolio`,
+
+        alt: 'pic of Rafael Freitas portfolio front page',
         
         extraLink: false,
         
@@ -88,6 +92,8 @@ const ProjectsContent = [
         href: 'https://codepen.io/rafaelbogfreitas/full/magJpe',
         
         linkGitHub:'https://github.com/rafaelbogfreitas/rafaelbogfreitas.github.io',
+
+        alt: 'pic of Arturas Grimalis portfolio front page',
         
         extraLink: true,
         
@@ -125,6 +131,8 @@ const ProjectsContent = [
         href: 'https://codepen.io/rafaelbogfreitas/full/BEQBvO',
         
         linkGitHub:'https://github.com/rafaelbogfreitas/technicalDocumentation',
+
+        alt: 'pic of Free Code Camp Technical Documentation project front page',
         
         extraLink: false,
         
@@ -160,6 +168,8 @@ const ProjectsContent = [
         href: 'https://codepen.io/rafaelbogfreitas/full/YdgYed',
         
         linkGitHub:'https://github.com/rafaelbogfreitas/productLandingProject',
+
+        alt: 'pic of Free Code Camp Product Landing project front page',
         
         extraLink: false,
         
@@ -191,6 +201,8 @@ const ProjectsContent = [
         href: 'https://codepen.io/rafaelbogfreitas/full/EGMoyX',
         
         linkGitHub:'https://github.com/rafaelbogfreitas/formProject',
+
+        alt: 'pic of Free Code Camp Form Project project front page',
         
         extraLink: false,
         
@@ -219,6 +231,8 @@ const ProjectsContent = [
         href: 'https://codepen.io/rafaelbogfreitas/full/bzjZox',
         
         linkGitHub:'https://github.com/rafaelbogfreitas/tributePage',
+
+        alt: 'pic of Free Code Camp Tribute Page project front page',
         
         extraLink: false,
         

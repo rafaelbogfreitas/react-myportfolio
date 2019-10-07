@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SkillsSession extends Component {
     constructor(props) {
@@ -15,19 +16,20 @@ class SkillsSession extends Component {
     }
 
     render() { 
-        let books = (
+        const { title, contents, books,  span, hasAuthor} = this.props;
+        let booksMarkUp = (
             <div>
                 <h3>Finished</h3>
                 <ul>
-                    {this.props.content.hasAuthor ? 
-                    this.props.content.books.filter(a => !a.reading)
+                    { hasAuthor ? 
+                    books.filter(a => !a.reading)
                     .map((a, i) => <li key={i}>{a.title}<br /><span>{a.author}</span></li>) 
                     : null}
                 </ul>
                 <h3>Reading</h3>
                 <ul>
-                    {this.props.content.hasAuthor ? 
-                    this.props.content.books.filter(a => a.reading)
+                    {hasAuthor ? 
+                    books.filter(a => a.reading)
                     .map((a, i) => <li key={i}>{a.title}<br /><span>{a.author}</span></li>) 
                     : null}
                 </ul>
@@ -36,8 +38,8 @@ class SkillsSession extends Component {
 
         let content = (
             <ul>
-                {(this.props.content.title !== 'Books') ? 
-                this.props.content.contents.map((a,i) => <li key={i}><span>{a.title + ' '}</span>{a.body}</li>) :
+                {(title !== 'Books') ? 
+                contents.map((a,i) => <li key={i}><span>{a.title + ' '}</span>{a.body}</li>) :
                 null}
             </ul>
         );
@@ -46,14 +48,22 @@ class SkillsSession extends Component {
         
         return ( 
             <div className="skills-section" onClick={this.handleClick}>
-                <h2 className="skills-title"><div className="text">{this.props.content.title}</div></h2>
+                <h2 className="skills-title"><div className="text">{ title }</div></h2>
                 <section className={this.state.open ? 'skills-content' : 'skills-content hidden'}>
-                    {!this.props.content.hasAuthor ? content : null}
-                    {this.props.content.hasAuthor ? books: null}
+                    {!hasAuthor ? content : null}
+                    {hasAuthor ? booksMarkUp: null}
                 </section>
             </div>
          );
     }
+}
+
+SkillsSession.propTypes = {
+    title: PropTypes.string.isRequired, 
+    contents: PropTypes.array, 
+    books: PropTypes.array,  
+    span: PropTypes.bool.isRequired, 
+    hasAuthor: PropTypes.bool.isRequired
 }
  
 export default SkillsSession;

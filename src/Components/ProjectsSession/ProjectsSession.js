@@ -9,7 +9,7 @@ const ProjectsSession = () =>
     
     <div className='projects'>
         <h1>Projects</h1>
-        {ProjectsContent.map((a, i) => <Projects key={i} content={a} />)}
+        {ProjectsContent.map((a, i) => <Projects key={i} {...a} />)}
     </div>;
  
 export default ProjectsSession;
