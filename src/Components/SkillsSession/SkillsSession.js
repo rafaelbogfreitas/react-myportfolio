@@ -43,8 +43,6 @@ class SkillsSession extends Component {
                 null}
             </ul>
         );
-
-
         
         return ( 
             <div className="skills-section" onClick={this.handleClick}>
@@ -60,10 +58,18 @@ class SkillsSession extends Component {
 
 SkillsSession.propTypes = {
     title: PropTypes.string.isRequired, 
-    contents: PropTypes.array, 
-    books: PropTypes.array,  
+    contents: PropTypes.arrayOf(PropTypes.object), 
+    books: PropTypes.arrayOf(PropTypes.object),  
     span: PropTypes.bool.isRequired, 
     hasAuthor: PropTypes.bool.isRequired
 }
+
+SkillsSession.defaultProps = {
+    title: 'Missing Title',
+    contents: [{title:'Missing content title', body: 'Missing content body'}],
+    books: [{title:'Missing Book title', author: 'Missing Author name'}],
+    span: false,
+    hasAuthor:true
+};
  
 export default SkillsSession;

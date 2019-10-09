@@ -1,6 +1,8 @@
 import React from 'react';
 
 import '../About/About.scss';
+import './Skills.scss';
+
 import SkillsContents from '../../util/SkillsContents';
 import SkillsSession from '../SkillsSession/SkillsSession';
 
