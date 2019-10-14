@@ -1,0 +1,7 @@
+@import '../../index.scss';
+
+@include large{
+    .fas.fa-expand-arrows-alt.expand-btn{
+        display: none;
+    }
+}

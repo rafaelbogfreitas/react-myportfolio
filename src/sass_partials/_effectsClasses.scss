@@ -1,18 +1,25 @@
 
-//used with Jquery for changing the styles of the 'show-more' button
-.highlight{
-  background: $secondary-color;
-  color:$backgrounds-color;
-  opacity: 0.6;
-}
-
-//highlights the current section on the NAV
-.selected{
-  color:$secondary-color;
-  transform: scale(1.1);
-}
-
 //stop displaying an element
 .hidden{
   display:none;
+}
+
+.hide {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  color:transparent;
+  transition: color 0.1s linear, max-height 0.2s ease-out 0.1s;
+  span {
+    color:transparent !important;
+  }
+  h3 {
+    color:transparent !important;
+  }
+}
+
+.turn90 {
+  transform:rotate(90deg);
+  transform-origin: center;
+  transition: transform 0.2s linear;
 }

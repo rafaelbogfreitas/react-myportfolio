@@ -1,6 +1,6 @@
 const SkillsContents = [
     {
-        title: 'My Skills',
+        title: 'Skills',
 
         contents: [
             {
@@ -60,7 +60,9 @@ const SkillsContents = [
 
         span: true,
 
-        hasAuthor: false
+        hasAuthor: false,
+
+        open:false
     },
 
     {
@@ -96,6 +98,8 @@ const SkillsContents = [
         span: true,
 
         hasAuthor: false,
+
+        open:false,
 
         author: []
     },
@@ -164,6 +168,8 @@ const SkillsContents = [
 
         hasAuthor: true,
 
+        open: false
+
     },
 
     {
@@ -197,7 +203,9 @@ const SkillsContents = [
 
         span: false,
 
-        hasAuthor: false
+        hasAuthor: false,
+
+        open: false
     },
 
     {
@@ -232,7 +240,9 @@ const SkillsContents = [
 
         span: false,
 
-        hasAuthor: false
+        hasAuthor: false,
+
+        open: false
     }
 
 ];
