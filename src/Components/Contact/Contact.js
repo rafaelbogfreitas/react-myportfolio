@@ -9,17 +9,18 @@ import './Contact.scss';
 
 const Contact = () =>
     <div className="contact">
+        <h1>Get In Touch!</h1>
         <div className="info-wrap">
             <div className="info-container">
-                <h1>Get In Touch!</h1>
                 <p>I will be very happy to meet with you, have a cup of coffee,
-                tell you about me and share my experience. Thanks for visiting! </p>
+                tell you about me and share my experience.</p>
+                <p>Thanks for visiting!</p>
+                <div className="icons-container">
+                    {IconsContent.map((a,i) => <Icons key={i} content={a} />)}
+                </div>
             </div>
-            <div className="icons-container">
-                {IconsContent.map((a,i) => <Icons key={i} content={a} />)}
-            </div>
+            <Form />
         </div>
-        <Form />
     </div>;
  
 export default Contact;

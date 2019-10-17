@@ -2,74 +2,84 @@
 
 .form-wrap {
 
-    @include flex(display, flex);
+  @include flex(display, flex);
+  @include flex(flex-direction, column);
+  @include flex(justify-content, space-between);
+  @include flex(align-items, space-between);
+
+  width: 45%;
+  height: auto;
+
+  //media queries
+  @include break(1100px){
+    width:60%;
+  }
+  @include medium {
+    width: 90%;
+    @include flex(align-self, center);
+  }//media queries
+  
+  form {
+    @include flex(display,flex);
     @include flex(flex-direction, column);
-    @include flex(justify-content, space-between);
-    @include flex(align-items, center);
+    @include flex(justify-content, center);
+  }
   
-    width: 45%;
-    height: auto;
-    margin:$margin-lg-screens;
-    margin-bottom: $margin-lg-screens * 3;
-    background:$secondary-color;
-    border-radius: 10px;
+  h3 {
+    color:white;
+    margin:2%;
+    margin-top:30px;
+    font-size: 1.3rem;
+    @include flex(align-self, flex-start);
+  }
   
-    //media queries
-    @include break(1100px){
-      width:60%;
-    }
-    @include medium {
-      width: 90%;
-    }//media queries
-  
-    form {
-        @include flex(display,flex);
-        @include flex(flex-direction, column);
-    }
-  
-    h3 {
-      color:white;
-      margin:2%;
-      @include flex(align-self, flex-start);
-    }
-  
-    .form-section {
-      padding:2%;
+  .form-section {
+    padding:2%;
+    font-size: 0.9rem;
+    color:white;
+    input {
       font-size: 0.9rem;
-      color:white;
-      input {
-        font-size: 0.9rem;
-        width:60%;
-        height:20px;
-        border:none;
-        padding-left: 10px;
-      }
-      textarea {
-        font-size: 0.9rem;
-        width: 60%;
-        height:auto;
-        border:none;
-        padding:10px;
-      }
-      label {
-        margin-left: 10px;
+      width:90%;
+      height:40px;
+      border:none;
+      padding-left: 10px;
+      @include medium {
+        width:100%;
+        height:30px;
       }
     }
-  
-    [type="submit"] {
-      width:100px;
-      margin:2%;
-      font-size: 1rem;
-      background: lighten($secondary-color, 20%);
-      transition:background 0.2s linear;
-      border: none;
-      // @include flex(align-self, center);
-      &:hover {
-        cursor: pointer;
-        color:$main_color;
-        background:white;
-        transition:background 0.2s linear;
+    textarea {
+      font-size: 0.9rem;
+      width: 90%;
+      height:200px;
+      border:none;
+      padding:10px;
+      @include medium {
+        width:100%;
       }
+    }
+    label {
+      margin-left: 10px;
     }
   }
+  
+  [type="submit"] {
+    width:100px;
+    margin:2%;
+    margin-bottom:30px;
+    padding: 1%;
+    font-size: 1rem;
+    color:white;
+    background: lighten($secondary-color, 20%);
+    transition:background 0.2s linear;
+    border: none;
+    // @include flex(align-self, center);
+    &:hover {
+      cursor: pointer;
+      color:$secondary_color;
+      background:white;
+      transition:background 0.2s linear;
+    }
+  }
+}
   

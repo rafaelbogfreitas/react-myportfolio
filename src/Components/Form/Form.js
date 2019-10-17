@@ -8,16 +8,13 @@ const Form = () =>
       <form name="contact" method="post">
       <input type="hidden" name="form-name" value="contact"></input>
         <div className="form-section">
-          <input type="text" name="name" required/>
-          <label htmlFor="name">Name</label>
+          <input type="text" name="name" placeholder="Name" required/>
         </div>
         <div className="form-section">
-          <input type="email" name="email" required/>
-          <label htmlFor="email">Email</label>
+          <input type="email" name="email" placeholder="Email" required/>
         </div>
         <div className="form-section">
-          <textarea name="message" rows="8" cols="80" required></textarea>
-          <label htmlFor="message">Message</label>
+          <textarea name="message" rows="8" cols="80" placeholder="Enter a message" required></textarea>
         </div>
         <input type="submit" value="Send"/>
       </form>
