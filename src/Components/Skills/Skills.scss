@@ -16,7 +16,7 @@
             background:rgba(white, 0.8);
             @include flex(align-items, center);
             @include flex(justify-content, center);
-            transition: width 0.3s linear, height 0.3s linear;
+            transition: width 0.4s linear, height 0.3s linear;
             .skills-box{
                 position:static;
                 @include extraLg {
@@ -46,10 +46,7 @@
                 @include flex(justify-content, center);
                 @include flex(align-items, center);
 
-                @include large {
-                    visibility:hidden !important;
-                }
-    
+                
                 &:hover{
                     cursor:pointer;
                     transform:scale(1.2);
@@ -57,8 +54,14 @@
                 }
             }
         }
-
-    
+        
+        
+    }
+            
+    .layer-closer {
+        @include large {
+            display:none !important;
+        }
     }
 
 }

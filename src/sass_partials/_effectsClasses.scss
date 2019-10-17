@@ -1,7 +1,7 @@
 
 //stop displaying an element
 .hidden{
-  display:none;
+  display:none !important;
 }
 
 .hide {
@@ -9,7 +9,6 @@
   overflow: hidden !important;
   padding: 0 !important;
   color:transparent;
-  transition: color 0.1s linear, max-height 0.2s ease-out 0.1s;
   span {
     color:transparent !important;
   }

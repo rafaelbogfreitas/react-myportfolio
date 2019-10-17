@@ -30,29 +30,29 @@ class Nav extends Component {
   }
 
   render() { 
-      return ( 
-        <HashRouter>
-          <nav> 
-            <ul id="main-nav">
-              <li id="down-arrow">
-                <div className="dropdown-container" onClick={this.handleClick}>
-                  <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
-                </div>
-              </li>
-              <li id="intro-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink exact to='/'>Home</NavLink></li>
-              <li id="about-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/about'>About</NavLink></li>
-              <li id="projects-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/projects'>Projects</NavLink></li>
-              <li id="contact-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/contact'>Contact</NavLink></li>
-            </ul>
-            <div className="content">
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/projects' component={ProjectsSession} />
-              <Route path='/contact' component={Contact} />
-            </div>
-          </nav>
-        </HashRouter> 
-      );
+    return ( 
+      <HashRouter>
+        <nav> 
+          <ul id="main-nav">
+            <li id="down-arrow">
+              <div className="dropdown-container" onClick={this.handleClick}>
+                <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
+              </div>
+            </li>
+            <li id="intro-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink exact to='/'>Home</NavLink></li>
+            <li id="about-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/about'>About</NavLink></li>
+            <li id="projects-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/projects'>Projects</NavLink></li>
+            <li id="contact-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/contact'>Contact</NavLink></li>
+          </ul>
+          <div className="content">
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/projects' component={ProjectsSession} />
+            <Route path='/contact' component={Contact} />
+          </div>
+        </nav>
+      </HashRouter> 
+    );
   }
 }
  

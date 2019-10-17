@@ -1,2 +1,5 @@
 @import '../../index.scss';
 
+.open-section {
+    background: lighten($secondary-color, 20%) !important;
+}

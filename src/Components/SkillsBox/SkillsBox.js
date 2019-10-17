@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import SkillsTitle from '../SkillsTitle/SkillsTitle';
 import SkillsBody from '../SkillsBody/SkillsBody';
 
 const SkillsBox = (props) =>
-            <div className="skills-section">
-                <SkillsTitle title={props.title} open={props.open} onClick={props.onClick} id={props.id}/>
-                <SkillsBody {...props}/>
-            </div>
+    <div className="skills-section">
+        <SkillsTitle title={props.title} open={props.open} onClick={props.onClick} id={props.id}/>
+        <SkillsBody {...props}/>
+    </div>
 
 SkillsBox.propTypes = {
     title: PropTypes.string.isRequired, 
