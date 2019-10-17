@@ -46,36 +46,6 @@
       p{
         color:white;
       }
-
-      .icons-container{
-    
-        @include flex(display, flex);
-        @include flex(justify-content, space-between);
-
-    
-        margin:$margin-lg-screens;
-        margin-top:50px;
-        
-        a{
-          margin-right: 15%;
-          font-size:3rem;
-          color:white !important;
-          &:hover{
-            transform: scale(1.2);
-            transition: all 0.2s;
-          }
-
-          @include break(1200px) {
-            font-size: 2.4rem;
-          }
-
-          @include medium {
-            margin-right: 0;
-          }
-    
-        }//a
-    
-      }//icons-container
     }
   }
 }//.contacts

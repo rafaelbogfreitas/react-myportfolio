@@ -3,8 +3,7 @@ import React from 'react';
 import './Home.scss';
 import rafael from'./rafael.svg';
 
-import Icons from '../Icons/Icons';
-import IconsContent from '../../util/IconsContent';
+import IconsBox from '../IconsBox/IconsBox';
 
 const Home = () => 
   <div className="container">
@@ -12,9 +11,7 @@ const Home = () =>
       <div className="headline headline1">RAFAEL</div>
       <div className="headline headline2">FREITAS</div>
       <div className="subtitle">Front-End Web Development</div>
-      <div className="icons-container">
-        {IconsContent.map((a, i) => <Icons  key={i} content={a} />)}
-      </div>
+      <IconsBox />
     </div>
     <img  src={rafael} className="img-intro" alt="rafael drawing"/>
   </div>;

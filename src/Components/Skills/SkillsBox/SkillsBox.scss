@@ -1,0 +1,20 @@
+@import '../../../index.scss';
+.skills-box {
+    //   display:none;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    height: auto; //or '80vh' have to test
+    width: 32%;
+    position: fixed;
+    top: 150px;
+
+    @include break(900px) {
+
+      @include flex(align-self, flex-start);
+
+      position: static;
+      width: 80%;
+    }
+
+    overflow:hidden;
+}

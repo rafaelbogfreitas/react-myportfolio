@@ -1,86 +1,70 @@
 @import '../../index.scss';
 
 
-.about{
-    .skills.on-focus {
+    
+.skills {
+position: relative;
+width: 35%;
 
-        @include extraLg {
+@include break(900px) {
+    width: 100%;
+}
 
-            position:fixed;
-            top:0;
-            right:0;
-            width:100vw;
-            margin:0;
-            padding:0;
-            z-index:10;
-            background:rgba(white, 0.8);
-            @include flex(align-items, center);
+height:100vh;
+
+@include flex(display, flex);
+@include flex(justify-content, center);
+
+}
+
+.skills.on-focus {
+
+    @include extraLg {
+
+        position:fixed;
+        top:0;
+        right:0;
+        width:100vw;
+        margin:0;
+        padding:0;
+        z-index:10;
+        background:rgba(white, 0.8);
+        @include flex(align-items, center);
+        @include flex(justify-content, center);
+        transition: width 0.4s linear, height 0.3s linear;
+    
+        .layer-closer {
+            position:absolute;
+            top:50px;
+            right:50px;
+            width:35px;
+            height:35px;
+            border-radius: 100%;
+            box-shadow:0px 0px 4px 1px rgba( black, 0.2);
+            background:$secondary-color;
+            color:white;
+            font-weight: bold;
+
+
+            @include flex(display, flex);
             @include flex(justify-content, center);
-            transition: width 0.4s linear, height 0.3s linear;
-            .skills-box{
-                position:static;
-                @include extraLg {
-                    width:600px;
-                }
-                max-height: 90vh;
-                .skills-content {
-                    background: white;
-                }
-                overflow: scroll;
-                box-shadow:1px 3px 10px 0px rgba( black, 0.1);
-            }
-            .layer-closer {
-                position:absolute;
-                top:50px;
-                right:50px;
-                width:35px;
-                height:35px;
-                border-radius: 100%;
-                box-shadow:0px 0px 4px 1px rgba( black, 0.2);
-                background:$secondary-color;
-                color:white;
-                font-weight: bold;
-    
-    
-                @include flex(display, flex);
-                @include flex(justify-content, center);
-                @include flex(align-items, center);
+            @include flex(align-items, center);
 
-                
-                &:hover{
-                    cursor:pointer;
-                    transform:scale(1.2);
-                    transition: transform 0.2s linear;
-                }
-            }
-        }
-        
-        
-    }
             
-    .layer-closer {
-        @include large {
-            display:none !important;
+            &:hover{
+                cursor:pointer;
+                transform:scale(1.2);
+                transition: transform 0.2s linear;
+            }
         }
     }
-
 }
-
-.expand-btn {
-    position:fixed;
-    top:124;
-    right:49;
-    padding:10px;
-    color: white;
-    background:$secondary-color;
-    border-radius: 5px;
-
-    &:hover {
-        transform: scale(1.2);
-        cursor: pointer;
-        transition: transform 0.2s linear;
+        
+        
+    
+            
+.layer-closer {
+    @include large {
+        display:none !important;
     }
-
 }
-
-//for future test

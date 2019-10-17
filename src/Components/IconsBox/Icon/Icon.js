@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Icons = (props) =>
+const Icon = (props) =>
         
     <a href={props.content.href}>
         <i className={props.content.iconClass}></i>
     </a>
  
-export default Icons;
+export default Icon;

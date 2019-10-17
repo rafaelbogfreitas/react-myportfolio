@@ -4,7 +4,7 @@ import '../About/About.scss';
 import './Skills.scss';
 
 import SkillsContents from '../../util/SkillsContents';
-import SkillsBox from '../SkillsBox/SkillsBox';
+import SkillsBox from './SkillsBox/SkillsBox';
 // import SkillsExpandBtn from '../SkillsExpandBtn/SkillsExpandBtn';
 
 class Skills extends React.Component {
@@ -57,11 +57,8 @@ class Skills extends React.Component {
     render() {
         return(
             <aside className={this.state.clicked ? 'skills on-focus' : 'skills'}>
-                {/* <SkillsExpandBtn  onClick={this.openLayer} clicked={this.state.clicked}/> */}
                 <div className={this.state.clicked ? 'layer-closer' : 'hidden'} onClick={this.closeLayer}>X</div>
-                <div className="skills-box">
-                        {this.state.state.map((a, i) => <SkillsBox key={i} {...a} onClick={(e) => this.openAccordeon(e)} id={a.title} open={a.open}/>)}
-                </div>
+                <SkillsBox state={this.state.state} openAccordeon={this.openAccordeon}/>
             </aside>
         );
 

@@ -1,5 +1,4 @@
-@import '../../index.scss';
-
+@import '../../../index.scss';
 .form-wrap {
 
   @include flex(display, flex);
@@ -71,14 +70,14 @@
     font-size: 1rem;
     color:white;
     background: lighten($secondary-color, 20%);
-    transition:background 0.2s linear;
+    transition:background 0.2s linear 0;
     border: none;
     // @include flex(align-self, center);
     &:hover {
       cursor: pointer;
       color:$secondary_color;
       background:white;
-      transition:background 0.2s linear;
+      transition:background 0.2s linear 0;
     }
   }
 }

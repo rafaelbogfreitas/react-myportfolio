@@ -1,9 +1,7 @@
 import React from 'react';
 
 import Form from '../Form/Form';
-import Icons from '../Icons/Icons';
-
-import IconsContent from '../../util/IconsContent';
+import IconsBox from '../IconsBox/IconsBox';
 
 import './Contact.scss';
 
@@ -15,9 +13,7 @@ const Contact = () =>
                 <p>I will be very happy to meet with you, have a cup of coffee,
                 tell you about me and share my experience.</p>
                 <p>Thanks for visiting!</p>
-                <div className="icons-container">
-                    {IconsContent.map((a,i) => <Icons key={i} content={a} />)}
-                </div>
+                <IconsBox />
             </div>
             <Form />
         </div>

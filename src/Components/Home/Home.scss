@@ -33,45 +33,10 @@
     }//media queries
   
     .title-container{
-  
       //media queries
       @include small {
         margin-top: 10px;
-      }//media queries
-  
-      .icons-container{
-        position:  absolute;
-        width: 50%;
-        bottom: 100px;
-  
-        //media queries
-        @media only screen and (min-width:1500px){
-            position:static;
-            width: 100%;
-            margin:0;
-            @include flex(display, flex);
-            @include flex(justify-content, space-between);
-            @include flex(align-items, center);
-        }
-  
-        @include medium {
-          display: none;
-        }//media queries
-  
-        a {
-          i{
-            padding:3%;
-            font-size: 1.4rem;
-            color:$secondary-color;
-            &:hover{
-              // font-size: 1.6rem;
-              // transition: font 0.2s;
-              transform: scale(1.2);
-              transition: transform 0.3s linear;
-            }
-          }
-        }
-      }
+      }//media queries  
     }
     div {
       &.title-container{

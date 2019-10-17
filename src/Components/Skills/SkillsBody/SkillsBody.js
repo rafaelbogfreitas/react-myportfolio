@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './SkillsBody.scss';
+
 class SkillsBody extends Component {
     render() { 
         const { title, contents, books,  span, hasAuthor, open} = this.props;

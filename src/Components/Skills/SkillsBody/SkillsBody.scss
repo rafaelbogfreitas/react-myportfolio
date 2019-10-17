@@ -1,0 +1,30 @@
+@import '../../../index.scss';
+.skills-content {
+    max-height: 40vh;
+    transition: max-height 0.4s linear;
+    overflow: scroll;
+    padding: 2%;
+    font-size: 0.9rem;
+
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1%;
+    }
+
+    ul {
+        margin: 1%;
+        // padding:2%;
+    }
+
+    li {
+        margin: 10px 0 10px;
+        line-height: 1.3rem;
+
+        span {
+            color: $secondary-color;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+    }
+}

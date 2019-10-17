@@ -1,0 +1,16 @@
+@import '../../../index.scss';
+
+@include extraLg {
+    .on-focus{
+        .skills-box{
+            position:static;
+            width:600px;
+            max-height: 90vh;
+            .skills-content {
+                background: white;
+            }
+            overflow: scroll;
+            box-shadow:1px 3px 10px 0px rgba( black, 0.1);
+        }
+    }
+}

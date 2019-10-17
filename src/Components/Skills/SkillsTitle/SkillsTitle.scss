@@ -1,0 +1,25 @@
+@import '../../../index.scss';
+.open-section {
+    background: lighten($secondary-color, 20%) !important;
+}
+
+.skills-title {
+    padding: 3%;
+    font-size: 1.2rem;
+    color: white;
+    background: $secondary-color;
+    position: relative;
+    box-shadow: 0px 0px 5px 1px rgba(darken($secondary-color, 20%), 0.3);
+    
+    @include flex(display, flex);
+    @include flex(justify-content, space-between);
+    @include flex(align-items, center);
+    
+
+    &:hover {
+      font-weight: bold;
+      cursor: pointer;
+      background-color:lighten($secondary-color, 15%);
+      transition: background-color 0.5s ease-out;
+    }
+  }
