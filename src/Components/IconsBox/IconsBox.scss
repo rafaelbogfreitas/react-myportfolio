@@ -49,8 +49,10 @@
         
         margin:$margin-lg-screens;
         margin-top:50px;
+
         
         a{
+            outline: 0 0 1px  white;
             margin-right: 15%;
             font-size:3rem;
             color:white !important;
@@ -59,6 +61,12 @@
                 transition: all 0.2s;
             }
             
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}){
+                    animation:shake 1s linear #{$i}s;
+                }    
+            }
+
             @include break(1200px) {
                 font-size: 2.4rem;
             }
@@ -66,6 +74,7 @@
             @include medium {
                 margin-right: 0;
             }
+
             
         }//a
         

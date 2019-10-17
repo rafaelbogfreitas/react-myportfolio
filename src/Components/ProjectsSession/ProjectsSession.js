@@ -2,8 +2,8 @@ import React from 'react';
 
 import './ProjectsSession.scss';
 
-import ProjectsContent from '../../../util/ProjectsContent';
-import Projects from '../Projects';
+import ProjectsContent from '../../util/ProjectsContent';
+import Projects from './Projects/Projects';
 
 const ProjectsSession = () =>
     

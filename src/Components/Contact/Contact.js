@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Form from '../Form/Form';
+import Form from './Form/Form';
 import IconsBox from '../IconsBox/IconsBox';
 
 import './Contact.scss';
