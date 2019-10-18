@@ -10,7 +10,8 @@ class Projects extends Component {
 
         this.state = { 
             hidden: true,
-            loading: true
+            loading: true,
+            window: window.innerWidth
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -21,7 +22,9 @@ class Projects extends Component {
     }
 
     componentDidMount(){
-        this.setState({ loading:!this.state.loading  });
+        // let windowWidth = window.innerWidth;
+        // console.log(windowWidth);
+        this.setState({ loading:!this.state.loading });
     }
 
     render() { 
@@ -32,10 +35,10 @@ class Projects extends Component {
                     {
                         this.state.loading ?
                         <Loading /> :
-                        <img src={imgSrc} alt={alt} className='animated fadeInLeft'/>
+                        <img src={imgSrc} alt={alt} className={(this.state.window <= 600) ? 'animated fadeIn':'animated fadeInLeft'}/>
                     }
                 </a>
-                <div className="project-description animated fadeInRight">
+            <div className={this.state.window <= 600 ? "project-description animated fadeInUp":"project-description animated fadeInRight"}>
                     <h2>{title}</h2>
                     {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
                     <p><nobr><span className="show-more" onClick={this.handleClick}>{this.state.hidden ? 'Show More +':'Show Less -'}</span></nobr></p>

@@ -6,7 +6,7 @@ import Icon from './Icon/Icon';
 import './IconsBox.scss';
 
 const IconsBox = () => 
-    <div className="icons-container">
+    <div className="icons-container animated fadeInUp">
         {IconsContent.map((a,i) => <Icon key={i} content={a} />)}
     </div>
 

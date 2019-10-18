@@ -1,9 +1,9 @@
 @import '../../../index.scss';
+
 .skills-box {
-    //   display:none;
     border: 1px solid $secondary-color;
     border-radius: 10px;
-    height: auto; //or '80vh' have to test
+    height: auto;
     width: 32%;
     position: fixed;
     top: 150px;

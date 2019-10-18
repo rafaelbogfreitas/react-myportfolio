@@ -7,8 +7,8 @@ import './About.scss';
 
  const About = () =>
     <div className="about">
-        <div className="about-wrap animated fadeInLeft">
-            <h1>About</h1>
+        <div className={window.innerWidth <= 600 ? "about-wrap animated fadeInUp" : "about-wrap animated fadeInLeft"}>
+        <h1>About</h1>
             {AboutContent.map((a, i) => <p key={i}>{a}</p>)}
         </div>
         <Skills />
