@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import './Projects.scss';
+import Loading from '../../Loading/Loading';
 
 class Projects extends Component {
     constructor(props){
         super(props);
 
         this.state = { 
-            hidden: true
+            hidden: true,
+            loading: true
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -18,14 +20,22 @@ class Projects extends Component {
         this.setState({ hidden: !this.state.hidden  });
     }
 
+    componentDidMount(){
+        this.setState({ loading:!this.state.loading  });
+    }
+
     render() { 
         const { title, href, alt, imgSrc, paragraphs, extraParagraph, technologies, linkGitHub, extraLink} = this.props;
         return ( 
             <div className="project-container">
                 <a href={href} target="_blank" rel='noreferrer noopener'>
-                    <img src={imgSrc} alt={alt} />
+                    {
+                        this.state.loading ?
+                        <Loading /> :
+                        <img src={imgSrc} alt={alt} className='animated fadeInLeft'/>
+                    }
                 </a>
-                <div className="project-description">
+                <div className="project-description animated fadeInRight">
                     <h2>{title}</h2>
                     {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
                     <p><nobr><span className="show-more" onClick={this.handleClick}>{this.state.hidden ? 'Show More +':'Show Less -'}</span></nobr></p>

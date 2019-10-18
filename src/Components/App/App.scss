@@ -1,0 +1,7 @@
+@import './../../index.scss';
+
+@include small {
+    .content {
+        margin-top: 30px;
+    }
+}

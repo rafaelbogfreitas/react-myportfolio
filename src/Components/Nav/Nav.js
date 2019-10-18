@@ -19,36 +19,36 @@ class Nav extends Component {
     super(props);
 
     this.state = {
-      iconOpen: false
+      iconOpen: false,
     }
 
     this.handleClick = this.handleClick.bind(this);
   } 
 
   handleClick(){
-    this.setState({ iconOpen: !this.state.iconOpen });
+    if(window.innerWidth <= 500) this.setState({ iconOpen: !this.state.iconOpen });
   }
 
   render() { 
     return ( 
       <HashRouter>
         <nav> 
-          <ul id="main-nav">
-            <li id="down-arrow">
-              <div className="dropdown-container" onClick={this.handleClick}>
-                <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
-              </div>
-            </li>
-            <li id="intro-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink exact to='/'>Home</NavLink></li>
-            <li id="about-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/about'>About</NavLink></li>
-            <li id="projects-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/projects'>Projects</NavLink></li>
-            <li id="contact-btn" className={this.state.iconOpen ? 'show' : ''}><NavLink to='/contact'>Contact</NavLink></li>
+          <div id="down-arrow">
+            <div className="dropdown-container" onClick={this.handleClick}>
+              <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
+            </div>
+          </div>
+          <ul id="main-nav" className={this.state.iconOpen ? 'show animated slideInDown' : ''}>
+            <li id="intro-btn"><NavLink exact to='/' onClick={this.handleClick}>Home</NavLink></li>
+            <li id="about-btn"><NavLink to='/about' onClick={this.handleClick}>About</NavLink></li>
+            <li id="projects-btn"><NavLink to='/projects' onClick={this.handleClick}>Projects</NavLink></li>
+            <li id="contact-btn"><NavLink to='/contact' onClick={this.handleClick}>Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/projects' component={ProjectsSession} />
-            <Route path='/contact' component={Contact} />
+            <Route path='/contact' component={Contact}/>
           </div>
         </nav>
       </HashRouter> 
