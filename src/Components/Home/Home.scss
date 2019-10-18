@@ -44,7 +44,6 @@
       }
       &.headline{
         // color:$secondary-color;
-  
         color:transparent;
         background: linear-gradient($linear-gradient);
         background-size: 500%;
@@ -64,7 +63,7 @@
         }//media queries
       }
       &.headline1{
-        font-weight: bold;
+        // font-weight: bold;
         letter-spacing: 8px;
         font-size: 6.3rem;
   

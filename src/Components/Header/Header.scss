@@ -1,0 +1,70 @@
+@import '../../index.scss';
+
+.header-box {
+    // outline: 2px solid yellow;
+    width: 100%;
+    height:auto;
+    .subtitle {
+        width:100%;
+        @include flex(display, flex);
+        @include flex(justify-content, space-between);
+        // outline: 2px solid yellow;
+        .letter-box {
+            letter-spacing: -2px;
+        }
+    }
+
+    .headline {
+        width:100%;
+        // outline: 2px solid yellow;
+        @include flex(display, flex);
+        @include flex(justify-content, center);
+        
+        .letter-box{
+            @include break(360px){
+                font-size:4rem;
+            }
+        }
+        .letter-box:first-child {
+            @include flex(justify-content, flex-start)
+        }
+        
+        .letter-box:last-child {
+            @include flex(justify-content, flex-end)
+            
+        }
+    }
+    
+    .headline1{
+        font-weight: bold;
+        .letter-box{
+            letter-spacing:10px;
+            &:last-child{
+                margin-right:-10px;
+            }
+        }
+    }
+
+    .headline2 {
+        .letter-box{
+            margin-left:-2px;
+        }
+    }
+
+    .letter-box {
+        
+        width:100%;
+        // outline: 1px solid red;
+        @include flex(display,flex);
+        @include flex(justify-content, center);
+    }
+
+}
+
+// @for $i from 1 through 6 {
+//     .headline1 {
+//         .letter-box:nth-child(#{$i}){
+//             animation:shake 1s ease-in #{$i}s;
+//         }
+//     }
+// }

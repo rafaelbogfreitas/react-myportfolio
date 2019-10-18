@@ -46,8 +46,8 @@ class Skills extends React.Component {
         this.openLayer();
         const state = this.state.state;
         const newState = state.map((a, i) => {
-            if(a.title === e.target.id && !a.open) a.open = true;
-            else a.open = false;
+            if(a.title === e.target.id && !a.open) return a.open = true;
+            else return a.open = false;
         });
 
         this.setState({ open: newState  }); 
