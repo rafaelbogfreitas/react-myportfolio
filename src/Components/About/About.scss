@@ -12,16 +12,15 @@
     align-items: center;
   }
 
-  @include small {
-    margin: auto;
-  }
+  // @include small {
+  //   margin: auto;
+  // }
 
   h1 {
     margin: $margin-lg-screens;
   }
 
   p {
-    margin-top: $margin-lg-screens;
     margin: $margin-lg-screens;
     font-size: 1.1rem;
     line-height: 1.8rem;
