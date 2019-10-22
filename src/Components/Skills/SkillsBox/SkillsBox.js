@@ -6,7 +6,7 @@ import './SkillsBox.scss';
 
 const SkillsBox = (props) => 
     
-    <div className="skills-box animated fadeInRight">
+    <div className="skills-box animated fadeInUp">
         {props.state.map((a, i) => <Skill key={i} {...a} onClick={(e) => props.openAccordeon(e)} id={a.title} open={a.open}/>)}
     </div>
 

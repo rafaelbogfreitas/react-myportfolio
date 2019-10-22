@@ -13,7 +13,7 @@ const Home = () =>
       <Header />
       <IconsBox />
     </div>
-    <img  src={rafael} className="img-intro" alt="rafael drawing"/>
+    <img  src={rafael} className="img-intro animated fadeIn" alt="rafael drawing"/>
   </div>;
 
 export default Home;
