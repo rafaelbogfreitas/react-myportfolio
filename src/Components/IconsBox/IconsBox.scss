@@ -61,12 +61,6 @@
                 transition: all 0.2s;
             }
             
-            @for $i from 1 through 5 {
-                &:nth-child(#{$i}){
-                    animation:shake 1s linear #{$i}s;
-                }    
-            }
-
             @include break(1200px) {
                 font-size: 2.4rem;
             }

@@ -43,13 +43,13 @@
         margin:$margin-lg-screens;
       }
       &.headline{
-        // color:$secondary-color;
-        color:transparent;
-        background: linear-gradient($linear-gradient);
-        background-size: 500%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        animation: moveBackground 5s linear infinite alternate;
+        color:$secondary-color;
+        // color:transparent;
+        // background: linear-gradient($linear-gradient);
+        // background-size: 500%;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // animation: moveBackground 5s linear infinite alternate;
   
   
   
