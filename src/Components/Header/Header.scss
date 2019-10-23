@@ -61,10 +61,29 @@
 
 }
 
-// @for $i from 1 through 6 {
-//     .headline1 {
-//         .letter-box:nth-child(#{$i}){
-//             animation:shake 1s ease-in #{$i}s;
-//         }
-//     }
-// }
+@for $i from 2 through 7 {
+    .headline1 {
+        .letter-box:nth-child(#{$i}){
+            animation:slideNFade 0.2s ease-in #{$i/4+1}s reverse backwards;
+        }
+    }
+    .headline2 {
+        .letter-box:nth-child(#{$i}){
+            animation:slideNFade 0.2s ease-in #{$i/4+1}s reverse backwards;
+        }
+    }
+}
+
+.headline1 .letter-box:first-child{
+    transform-origin: left;
+    animation:doubleScale 1s linear 1s reverse backwards;  
+}
+    
+.headline2 .letter-box:first-child{
+    transform-origin: left;
+    animation:upNRight 1s linear 1s reverse backwards;
+}
+
+.subtitle {
+    animation: opacity 5s linear 1s reverse backwards;
+}

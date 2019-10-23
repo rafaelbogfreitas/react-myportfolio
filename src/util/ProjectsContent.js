@@ -42,7 +42,8 @@ const ProjectsContent = [
             'SASS with COMPASS',
             'JavaScript',
             'JQuery',
-            'NPM (gulp-uglify, concat, compass, html-minify, cssnano)'
+            'NPM (gulp-uglify, concat, compass, html-minify, cssnano)',
+            'Mustache.js'
         ]
     },
 

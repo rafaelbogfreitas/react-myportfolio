@@ -1,0 +1,37 @@
+@keyframes slideNFade {
+    0%{
+        opacity:1;
+        transform:translateX(0);
+    }
+    
+    100%{
+        opacity:0;
+        transform:translateX(-100%);
+    }
+}
+
+@keyframes doubleScale {
+    100%{
+        transform: scale(2) translateY(30%) translateX(40%);
+    }
+}
+
+@keyframes upNRight {
+    100% {
+        position: relative;
+        transform:scale(2.1) 
+                translateX(150%) 
+                translateY(-18%); 
+                // rotateY(180deg);
+        font-weight: bold;
+    }
+}
+
+@keyframes opacity {
+    0%{
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
