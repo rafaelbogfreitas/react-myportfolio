@@ -5,7 +5,7 @@ import IconsBox from '../IconsBox/IconsBox';
 
 import './Contact.scss';
 
-const Contact = (props) =>
+const Contact = () =>
     <div className="contact">
         <h1>Get In Touch!</h1>
         <div className={window.innerWidth <= 400 ? "info-wrap animated fadeIn":"info-wrap"}>

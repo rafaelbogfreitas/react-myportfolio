@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Letter = (props) => <span className="letter-box">{props.letter}</span>
+const Letter = ({letter}) => <span className="letter-box">{letter}</span>
 
 export default Letter;
