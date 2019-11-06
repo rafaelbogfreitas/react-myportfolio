@@ -4,120 +4,120 @@
 @import '../../index.scss';
 
 #main-nav {
-    @include flex(display, flex);
-    @include flex(justify-content, flex-end);
+  @include flex(display, flex);
+  @include flex(justify-content, flex-end);
 
-    z-index: 5;
-    background: $backgrounds-color;
-    position:fixed;
+  z-index: 5;
+  background: $backgrounds-color;
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  right:0;
+  list-style: none;
+  
+  //media queries
+  @media only screen and (min-width:1450px){
+    @include flex(justify-content, space-around);
+  }
+  
+  @include medium {
+    @include flex(display, flex);
+    @include flex(justify-content, center);
+    
+    border-bottom: 1px solid $secondary-color;
+  }
+  
+  @include small {
+    @include flex(flex-direction, column);
+    @include flex(align-items, center);
+    
+    top:30px;
+    width: 99%;
+    margin: 0 auto;
+    // position: static;
+    border-bottom: 0px;
+    display: none;
+    font-size: 1.4rem;
+  }//media queries
+  
+  li {
+    display:block;
+
+
+    //media queries
+    @include medium {
+      padding: 5px;
+      font-size: 1.4rem;
+    }
+
+    margin:10px 4%;
+    font-size: 1.3rem;
+    text-align: center;
+    &:hover{
+      color:$secondary-color;
+      transition:all 0.3s;
+      cursor: pointer;
+    }
+
+    .active{
+      color:$secondary-color;
+      transition: color 0.2s ease-out;
+    }
+  }
+}
+  
+#down-arrow{
+  display:none;
+  border-bottom:1px solid $secondary-color;
+
+  //media queries
+  @include small {
+    position: fixed;
     top:0;
     left:0;
-    width: 100%;
-    right:0;
-    list-style: none;
-    
-    //media queries
-    @media only screen and (min-width:1450px){
-      @include flex(justify-content, space-around);
-    }
-    
-    @include medium {
+    z-index: 10;
+    background: white;
+    width: 99%;
+    height: 20px;
+    display:block;
+    padding:10px;
+    .dropdown-container{
+
       @include flex(display, flex);
-      @include flex(justify-content, center);
-      
-      border-bottom: 1px solid $secondary-color;
-    }
-    
-    @include small {
-      @include flex(flex-direction, column);
       @include flex(align-items, center);
-      
-      top:30px;
-      width: 99%;
-      margin: 0 auto;
-      // position: static;
-      border-bottom: 0px;
-      display: none;
-      font-size: 1.2rem;
-    }//media queries
-    
-    li {
-      display:block;
 
-  
-      //media queries
-      @include medium {
-        padding: 5px;
-        font-size: 1rem;
-      }
-  
-      margin:10px 4%;
-      font-size: 1.3rem;
-      text-align: center;
-      &:hover{
-        color:$secondary-color;
-        transition:all 0.3s;
-        cursor: pointer;
-      }
-
-      .active{
-        color:$secondary-color;
-        transition: color 0.2s ease-out;
-      }
-    }
-  }
-  
-  #down-arrow{
-    display:none;
-    border-bottom:1px solid $secondary-color;
-
-    //media queries
-    @include small {
-      position: fixed;
-      top:0;
-      left:0;
-      z-index: 10;
-      background: white;
-      width: 99%;
-      height: 20px;
-      display:block;
-      padding:10px;
-      .dropdown-container{
-
-        @include flex(display, flex);
-        @include flex(align-items, center);
-
-        position: absolute;
-        left:30px;
-        top: 0;
+      position: absolute;
+      left:30px;
+      top: 0;
+      width: 30px;
+      height:100%;
+      .dropdown-icon,
+      .dropdown-icon::before,
+      .dropdown-icon::after{
+        display:block;
+        background: $secondary-color;
         width: 30px;
-        height:100%;
-        .dropdown-icon,
-        .dropdown-icon::before,
-        .dropdown-icon::after{
-          display:block;
-          background: $secondary-color;
-          width: 30px;
-          height: 2px;
-          // border-radius: 2px;
-          position: relative;
-          // transform:scale(1.1);
-          transition:transform 0.2s linear;
-        }
-        .dropdown-icon::before,
-        .dropdown-icon::after{
-          content:"";
-          position: absolute;
-        }
-        .dropdown-icon::before{
-          bottom:10px;
-        }
-        .dropdown-icon::after{
-          top:10px;
-        }
-      }//drop-down-container
-    }//media queries
-  }
+        height: 2px;
+        // border-radius: 2px;
+        position: relative;
+        // transform:scale(1.1);
+        transition:transform 0.2s linear;
+      }
+      .dropdown-icon::before,
+      .dropdown-icon::after{
+        content:"";
+        position: absolute;
+      }
+      .dropdown-icon::before{
+        bottom:10px;
+      }
+      .dropdown-icon::after{
+        top:10px;
+      }
+    }//drop-down-container
+  }//media queries
+}
 
 .dropdown-icon-closed {
   background:white !important;
