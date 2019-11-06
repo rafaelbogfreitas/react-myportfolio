@@ -43,6 +43,7 @@
     
     li {
       display:block;
+
   
       //media queries
       @include medium {
@@ -89,14 +90,14 @@
         position: absolute;
         left:30px;
         top: 0;
-        width: 15px;
+        width: 30px;
         height:100%;
         .dropdown-icon,
         .dropdown-icon::before,
         .dropdown-icon::after{
           display:block;
           background: $secondary-color;
-          width: 15px;
+          width: 30px;
           height: 2px;
           // border-radius: 2px;
           position: relative;
@@ -109,10 +110,10 @@
           position: absolute;
         }
         .dropdown-icon::before{
-          bottom:5px;
+          bottom:10px;
         }
         .dropdown-icon::after{
-          top:5px;
+          top:10px;
         }
       }//drop-down-container
     }//media queries
