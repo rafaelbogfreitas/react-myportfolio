@@ -15,6 +15,10 @@
   width: 100%;
   right:0;
   list-style: none;
+
+  li {
+    padding-top:10px;
+  }
   
   //media queries
   @media only screen and (min-width:1450px){
@@ -48,6 +52,7 @@
     //media queries
     @include medium {
       padding: 5px;
+      padding-top:10px;
       font-size: 1.4rem;
     }
 
