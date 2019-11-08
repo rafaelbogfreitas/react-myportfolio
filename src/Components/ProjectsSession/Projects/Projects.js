@@ -10,7 +10,7 @@ class Projects extends Component {
 
         this.state = { 
             hidden: true,
-            loading: true,
+            loading: true
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -25,7 +25,7 @@ class Projects extends Component {
     }
 
     render() { 
-        const { title, href, alt, imgSrc, paragraphs, extraParagraph, technologies, linkGitHub, extraLink} = this.props;
+        const { title, href, alt, imgSrc, imgSrcSml, paragraphs, extraParagraph, technologies, linkGitHub, extraLink} = this.props;
         return ( 
             <div className="project-container">
                 
@@ -33,7 +33,7 @@ class Projects extends Component {
                     {
                         this.state.loading ?
                         <Loading /> :
-                        <img src={imgSrc} 
+                        <img src={window.innerWidth > 500 ? imgSrc : imgSrcSml} 
                             alt={alt} 
                             className='animated fadeIn'
                         />

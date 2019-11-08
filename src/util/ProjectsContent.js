@@ -1,10 +1,17 @@
-import img1 from '../images/jWebsite.png';
-import img2 from '../images/webPortfolio.png';
-import img3 from '../images/arturasgrimalis.png';
-import img4 from '../images/technicaldoc.png';
-import img5 from '../images/productLanding.png';
-import img6 from '../images/formproject.png';
-import img7 from '../images/tributePage.png';
+import img1 from '../images/jWebsite-lg.png';
+import img1sml from '../images/jWebsite-sml.png';
+import img2 from '../images/webPortfolio-lg.png';
+import img2sml from '../images/webPortfolio-sml.png';
+import img3 from '../images/arturasgrimalis-lg.png';
+import img3sml from '../images/arturasgrimalis-sml.png';
+import img4 from '../images/technicaldoc-lg.png';
+import img4sml from '../images/technicaldoc-sml.png';
+import img5 from '../images/productLanding-lg.png';
+import img5sml from '../images/productLanding-sml.png';
+import img6 from '../images/formproject-lg.png';
+import img6sml from '../images/formproject-sml.png';
+import img7 from '../images/tributePage-lg.png';
+import img7sml from '../images/tributePage-sml.png';
 
 const ProjectsContent = [
     {
@@ -19,6 +26,8 @@ const ProjectsContent = [
         extraLink: true,
 
         imgSrc: img1,
+
+        imgSrcSml: img1sml,
 
         paragraphs: [
             `This was my first commercial project, developed for a colleague who works as a musician.
@@ -59,7 +68,9 @@ const ProjectsContent = [
         extraLink: false,
         
         imgSrc: img2,
-        
+
+        imgSrcSml: img2sml,
+
         paragraphs: [
             `This is the last project for Free Code Camp's responsive web development curriculum. The purpose of this project
             was to build a portfolio page to display the previous projects on the same curriculum and the future ones. It was meant
@@ -99,6 +110,8 @@ const ProjectsContent = [
         extraLink: true,
         
         imgSrc: img3,
+
+        imgSrcSml: img3sml,
         
         paragraphs: [
             `In my first months of learning from scratch how to code, a friend presents me with this challenge:
@@ -138,6 +151,8 @@ const ProjectsContent = [
         extraLink: false,
         
         imgSrc: img4,
+
+        imgSrcSml: img4sml,
         
         paragraphs: [
             `In this project, I created a documentation page as requested by Free Code Camp in their fourth project for
@@ -175,6 +190,8 @@ const ProjectsContent = [
         extraLink: false,
         
         imgSrc: img5,
+
+        imgSrcSml: img5sml,
         
         paragraphs: [
             `This is the third project I created for Free Code Camp's curriculum on responsive
@@ -208,6 +225,8 @@ const ProjectsContent = [
         extraLink: false,
         
         imgSrc: img6,
+
+        imgSrcSml: img6sml,
         
         paragraphs: [
            `The second project I did for Free Code Camp. Its idea was to start working with forms
@@ -238,6 +257,8 @@ const ProjectsContent = [
         extraLink: false,
         
         imgSrc: img7,
+
+        imgSrcSml: img7sml,
         
         paragraphs: [
            `This is my first project ever, when I decided to take on the Free Code Camp's
