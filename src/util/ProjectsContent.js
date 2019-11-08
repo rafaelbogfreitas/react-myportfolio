@@ -27,7 +27,8 @@ const ProjectsContent = [
             designed the page.`,
             `In this project, I was more advanced with SASS, JavaScript and JQuery, so I had liberty
             for getting more creative. Mixins were used to automate the inclusion of vendor prefixes for flex-box.
-            With JQuery and JavaScript, I designed a simple song player and to create its logics was probably the most
+            With JQuery and JavaScript, I designed a simple song player which uses Mustache template to create the markup 
+            for every song. To create the player logics was probably the most
             challenging part of the project.`
         ],
         
@@ -77,12 +78,11 @@ const ProjectsContent = [
         ],
         
         technologies: [
-            'HTML5',
-            'SASS with GULP',
+            'JSX',
+            'node-sass',
             'JavaScript',
             'React JS',
-            'JQuery',
-            'NPM (gulp-uglify, concat, compass, html-minify, cssnano)',
+            'react-router',
             'Git and GitHub '
         ]
     },
