@@ -8,7 +8,7 @@ class Projects extends Component {
     constructor(props){
         super(props);
 
-        this.state = { 
+        this.state = {
             hidden: true,
             loading: true,
         };
@@ -24,22 +24,22 @@ class Projects extends Component {
         this.setState(prevState => {return { loading:!prevState.loading }});
     }
 
-    render() { 
+    render() {
         const { title, href, alt, imgSrc, paragraphs, extraParagraph, technologies, linkGitHub, extraLink} = this.props;
-        return ( 
+        return (
             <div className="project-container">
-                
+
                 <a href={href} target="_blank" rel='noreferrer noopener'>
                     {
                         this.state.loading ?
                         <Loading /> :
-                        <img src={imgSrc} 
-                            alt={alt} 
+                        <img src={imgSrc}
+                            alt={alt}
                             className='animated fadeIn'
                         />
                     }
                 </a>
-                
+
                 <div className="project-description animated fadeInUp">
                     <h2>{title}</h2>
                     {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
@@ -51,7 +51,7 @@ class Projects extends Component {
                             <h3>Technologies used:</h3>
                             <ul>
                                 {technologies.map((a,i) => <li key={i}>{a}</li>)}
-                            <li><a href={linkGitHub}>
+                            <li><a href={linkGitHub} target="_blank" rel='noreferrer noopener'>
                                 <i className="fab fa-github-square"></i>
                             </a></li>
                             </ul>
@@ -74,5 +74,5 @@ Projects.propTypes = {
     extraLink: PropTypes.bool.isRequired,
     linkGitHub: PropTypes.string.isRequired
 }
- 
+
 export default Projects;
