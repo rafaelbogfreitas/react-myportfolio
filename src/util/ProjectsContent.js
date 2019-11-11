@@ -21,7 +21,7 @@ const ProjectsContent = [
         imgSrc: img1,
 
         paragraphs: [
-            `This was my first commercial project, developed for a colleague who works as a musician.
+            `This was my first commercial project, developed for a client who works as a musician.
             He asked me for a website where he could show his music and videos and have a short 'about me'
             to introduce himself and work. He had no idea of how he wanted it to look like, so I also
             designed the page.`,
@@ -62,28 +62,29 @@ const ProjectsContent = [
         imgSrc: img2,
 
         paragraphs: [
-            `This is the last project for Free Code Camp's responsive web development curriculum. The purpose of this project
-            was to build a portfolio page to display the previous projects on the same curriculum and the future ones. It was meant
-            to be a simple build with only HTML5 and CSS3 but I decided to take a step further and make it as good as I can and
-            possibly use it as my actual portfolio for hopefully getting my first Front End Dev job.`,
+          `This is the last project for Free Code Camp's responsive web development curriculum. The purpose of this project
+          was to build a portfolio page to display the previous projects on the same curriculum and the future ones. It was meant
+          to be a simple build with only HTML5 and CSS3 but I decided to take a step further and make it as good as I can and
+          possibly use it as my actual portfolio for hopefully getting my first Front End Dev job.`,
 
-            `While working on this project I was already familiar to a certain extent with NPM, I then used Gulp to uglify my JS files
-            and cssnano to minify my style sheets. I have used SASS to write the styles and Gulp-Sass to compile them...`
+          `While working on this project I was already familiar to a certain extent with NPM, I then used Gulp to uglify my JS files
+          and cssnano to minify my style sheets. I have used SASS to write the styles and Gulp-Sass to compile them...`
         ],
 
         extraParagraph: [
-            `I also was familiar with JQuery and used it in the project to give my portfolio interactivity.
-            Once again I have expanded my skills with Flexbox and was happy and comfortable controlling the layout as I wanted. The website
-            is responsive and looks good in every screen size.`
+          `I also was familiar with JQuery and used it in the project to give my portfolio interactivity.
+          Once again I have expanded my skills with Flexbox and was happy and comfortable controlling the layout as I wanted. The website
+          is responsive and looks good in every screen size.`
         ],
 
         technologies: [
-            'JSX',
-            'node-sass',
-            'JavaScript',
-            'React JS',
-            'react-router',
-            'Git and GitHub '
+          'React JS',
+          'JSX',
+          'node-sass',
+          'JavaScript',
+          'ES6+',
+          'react-router',
+          'Git and GitHub '
         ]
     },
 
@@ -96,43 +97,43 @@ const ProjectsContent = [
 
         alt: 'pic of Arturas Grimalis portfolio front page',
 
-        extraLink: true,
+        extraLink: false,
 
         imgSrc: img3,
 
         paragraphs: [
-            `This was a project designed to meet the client's requirement of a minimalistic photography
-            portfolio, laying the photos on the page in an unstructured way, overlaying on some points
-            across the website. The client requested to have only his initials displayed on the page and
-            no contact details except from a form where the visitor could send him a message. When clicking
-            on any of the pictures he required a carousel displaying them centered on the screen, over the
-            entire page.`,
-            `To develop this project I created a data.json file containing an array of objects.
-            Each of them contains data about the photos, and using a Mustache template looping over
-            the array, the bulk of the HTML was built automatically. Laying the pictures was done using
-            CSS3 grid and to automate the creation of the rules with the grid positions for every photo I
-            have used a SASS mixin altogether with an @each loop to read a list of grid coordinates and
-            update the CSS. More details about this can be seen on the project's repository README.md file.`
+          `This was a project designed to meet the client's requirement of a minimalistic photography
+          portfolio, laying the photos on the page in an unstructured way, overlaying on some points
+          across the website. The client requested to have only his initials displayed on the page and
+          no contact details except from a form where the visitor could send him a message. When clicking
+          on any of the pictures he required a carousel displaying them centered on the screen, over the
+          entire page.`,
+          `To develop this project I created a data.json file containing an array of objects.
+          Each of them contains data about the photos, and using a Mustache template looping over
+          the array, the bulk of the HTML was built automatically. Laying the pictures was done using
+          CSS3 grid and to automate the creation of the rules with the grid positions for every photo I
+          have used a SASS mixin altogether with an @each loop to read a list of grid coordinates and
+          update the CSS. More details about this can be seen on the project's repository README.md file.`
         ],
 
         extraParagraph: [
-            `Browserify was used to create modules for the scripts, keeping features separate during the
-            development and joining all the files into a bundle.js to sent to distribution. JQuery was used
-            to simplify the creation of some features, like the carousel. Gulp task runner was used to minify
-            all the files across the project and create an optimized version to be deployed on Netlify.`,
-            `The project might expand on the future with the creation of different photography collections,
-            each with a different pattern of display.`
+          `Browserify was used to create modules for the scripts, keeping features separate during the
+          development and joining all the files into a bundle.js to sent to distribution. JQuery was used
+          to simplify the creation of some features, like the carousel. Gulp task runner was used to minify
+          all the files across the project and create an optimized version to be deployed on Netlify.`,
+          `The project might expand on the future with the creation of different photography collections,
+          each with a different pattern of display.`
         ],
 
         technologies: [
-            'HTML5',
-            'CSS3 Grid and Flexbox',
-            'SASS mixins, @each loops, and lists',
-            'JavaScript',
-            'JQuery',
-            'Browserify and Watchify',
-            'Common.js',
-            'Git and GitHub '
+          'HTML5',
+          'CSS3 Grid and Flexbox',
+          'SASS mixins, @each loops, and lists',
+          'JavaScript',
+          'JQuery',
+          'Browserify and Watchify',
+          'Common.js',
+          'Git and GitHub '
         ]
     },
 
@@ -150,15 +151,15 @@ const ProjectsContent = [
         imgSrc: img4,
 
         paragraphs: [
-            `In this project, I created a documentation page as requested by Free Code Camp in their fourth project for
-            responsive web designer curriculum. I have written comprehensive and accessible HTML5, used flex box for the page
-            layout and even though not recommended for FCC, created functionality with JavaScript + Flexbox properties to change
-            the navigation bar position on the screen or completely remove it for better reading. For smaller screens I have used
-            media queries and 'rem' size units to make the website responsive.`,
+          `In this project, I created a documentation page as requested by Free Code Camp in their fourth project for
+          responsive web designer curriculum. I have written comprehensive and accessible HTML5, used flex box for the page
+          layout and even though not recommended for FCC, created functionality with JavaScript + Flexbox properties to change
+          the navigation bar position on the screen or completely remove it for better reading. For smaller screens I have used
+          media queries and 'rem' size units to make the website responsive.`,
 
-            `I have used transitions with different delay times to make the moving of the navigation bar and the buttons smooth.
-            I was excited about this project as I had more knowledge and was feeling comfortable and confident in creating
-            the features the way I wanted.`
+          `I have used transitions with different delay times to make the moving of the navigation bar and the buttons smooth.
+          I was excited about this project as I had more knowledge and was feeling comfortable and confident in creating
+          the features the way I wanted.`
         ],
 
         extraParagraph: [
@@ -166,10 +167,10 @@ const ProjectsContent = [
         ],
 
         technologies: [
-            'HTML5',
-            'CSS3 (Flexbox, Transforms, Transitions)',
-            'JavaScript',
-            'Git and GitHub '
+          'HTML5',
+          'CSS3 (Flexbox, Transforms, Transitions)',
+          'JavaScript',
+          'Git and GitHub '
         ]
     },
 
@@ -187,11 +188,11 @@ const ProjectsContent = [
         imgSrc: img5,
 
         paragraphs: [
-            `This is the third project I created for Free Code Camp's curriculum on responsive
-            web design. I had to deliver a product landing page, using accessible HTML5, flexbox,
-            form elements, and a banner. I took the opportunity to expand my CSS3 knowledge, learning how to
-            reasonably make use of transforms with transitions for better user experience. I have practice
-            more flexbox and learned more on how to use form elements with client-side validation.`
+          `This is the third project I created for Free Code Camp's curriculum on responsive
+          web design. I had to deliver a product landing page, using accessible HTML5, flexbox,
+          form elements, and a banner. I took the opportunity to expand my CSS3 knowledge, learning how to
+          reasonably make use of transforms with transitions for better user experience. I have practice
+          more flexbox and learned more on how to use form elements with client-side validation.`
         ],
 
         extraParagraph: [
@@ -199,10 +200,10 @@ const ProjectsContent = [
         ],
 
         technologies: [
-            'HTML5',
-            'CSS3',
-            'JavaScript',
-            'Git and GitHub '
+          'HTML5',
+          'CSS3',
+          'JavaScript',
+          'Git and GitHub '
         ]
     },
 
@@ -220,9 +221,9 @@ const ProjectsContent = [
         imgSrc: img6,
 
         paragraphs: [
-           `The second project I did for Free Code Camp. Its idea was to start working with forms
-           and responsive web design, altering the layout according to the screen size. I made broader use
-           of the media queries and started exploring form elements, also expanded my habilities with CSS3.`
+         `The second project I did for Free Code Camp. Its idea was to start working with forms
+         and responsive web design, altering the layout according to the screen size. I made broader use
+         of the media queries and started exploring form elements, also expanded my habilities with CSS3.`
         ],
 
         extraParagraph: [
@@ -230,9 +231,9 @@ const ProjectsContent = [
         ],
 
         technologies: [
-            'HTML5',
-            'CSS3',
-            'Git and GitHub '
+          'HTML5',
+          'CSS3',
+          'Git and GitHub '
         ]
     },
 
@@ -250,10 +251,10 @@ const ProjectsContent = [
         imgSrc: img7,
 
         paragraphs: [
-           `This is my first project ever, when I decided to take on the Free Code Camp's
-           responsive web development curriculum. The idea was to create a tribute page, with an image that would resize
-           according to the screen and comprehensive HTML for accessibility. I have used pseudo-selectors for creating pulling
-           quotes and also media queries for a better layout on smaller screens.`
+         `This is my first project ever, when I decided to take on the Free Code Camp's
+         responsive web development curriculum. The idea was to create a tribute page, with an image that would resize
+         according to the screen and comprehensive HTML for accessibility. I have used pseudo-selectors for creating pulling
+         quotes and also media queries for a better layout on smaller screens.`
         ],
 
         extraParagraph: [
@@ -261,9 +262,9 @@ const ProjectsContent = [
         ],
 
         technologies: [
-            'HTML5',
-            'CSS3 (flexbox, pseudo-selectors)',
-            'Git and GitHub '
+          'HTML5',
+          'CSS3 (flexbox, pseudo-selectors)',
+          'Git and GitHub '
         ]
     }
 
