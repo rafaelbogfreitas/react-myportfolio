@@ -36,6 +36,7 @@ class Projects extends Component {
                         <img src={imgSrc}
                             alt={alt}
                             className='animated fadeIn'
+                            SameSite="None"
                         />
                     }
                 </a>
@@ -52,7 +53,7 @@ class Projects extends Component {
                             <ul>
                                 {technologies.map((a,i) => <li key={i}>{a}</li>)}
                             <li><a href={linkGitHub} target="_blank" rel='noreferrer noopener'>
-                                <i className="fab fa-github-square"></i>
+                                <i className="fab fa-github-square github-icon"></i>
                             </a></li>
                             </ul>
                         </aside>

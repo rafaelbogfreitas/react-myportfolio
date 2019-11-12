@@ -100,11 +100,12 @@
         }
       }
 
-      i {
+      .github-icon {
         color:$secondary-color;
         font-size: 2rem;
+        transition: color 0.2s linear;
         &:hover{
-          font-size: 2.1rem;
+          color:darken($secondary-color, 10%);
         }
       }
 
