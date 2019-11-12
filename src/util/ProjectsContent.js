@@ -62,19 +62,27 @@ const ProjectsContent = [
         imgSrc: img2,
 
         paragraphs: [
-          `This is the last project for Free Code Camp's responsive web development curriculum. The purpose of this project
-          was to build a portfolio page to display the previous projects on the same curriculum and the future ones. It was meant
-          to be a simple build with only HTML5 and CSS3 but I decided to take a step further and make it as good as I can and
-          possibly use it as my actual portfolio for hopefully getting my first Front End Dev job.`,
+          `A personal website, initially built with CSS/SASS and JQuery used to display/hide different 
+          sessions based on the navigation. While talking to a friend who works as a web developer, I 
+          soon realized I had a routing problem and that building the functionality likewise wasn't a 
+          best practice. As I was studying React at this time, and specifically react-router, I decided 
+          to take a step further and rebuild all my portfolio using React to target the routing problem 
+          and as a way to develop my skills with the technology.`,
 
-          `While working on this project I was already familiar to a certain extent with NPM, I then used Gulp to uglify my JS files
-          and cssnano to minify my style sheets. I have used SASS to write the styles and Gulp-Sass to compile them...`
+          `Now the navigation bar reflects the session of the page where the user is currently navigating 
+          and the back and forward arrows work as they should. All the data on the website is recorded in 
+          JavaScript objects and React/JSX uses them to build all the markup dynamically and efficiently. 
+          ES6+ is used all across the code.`,
+
+          `I have organized the code to keep as many components as possible as stateless functional ones 
+          and kept the state stored in just a few key class components. I used prop-types to perform type 
+          checking and default props in case props are not passed to components.`
         ],
 
         extraParagraph: [
-          `I also was familiar with JQuery and used it in the project to give my portfolio interactivity.
-          Once again I have expanded my skills with Flexbox and was happy and comfortable controlling the layout as I wanted. The website
-          is responsive and looks good in every screen size.`
+          `I have finished reading and learning from a book called 'Learning React' by Kirupa and I am 
+          currently reading a more advanced one by Alex Banks and Porcello, so this project's code is 
+          constantly improving.`
         ],
 
         technologies: [
