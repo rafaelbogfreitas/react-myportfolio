@@ -8,18 +8,18 @@ const Form = () =>
       <form name="contact" method="post">
       <input type="hidden" name="form-name" value="contact"></input>
         <div className="form-section">
-          <input type="text" name="name" placeholder="Name" className="animated fadeInUp" required/>
+          <input type="text" name="name" placeholder="Name" className="animated fadeIn" required/>
         </div>
         <div className="form-section">
-          <input type="email" name="email" placeholder="Email" className="animated fadeInUp" required/>
+          <input type="email" name="email" placeholder="Email" className="animated fadeIn" required/>
         </div>
         <div className="form-section">
-          <textarea name="message" rows="8" cols="80" placeholder="Enter a message" className="animated fadeInUp" required></textarea>
+          <textarea name="message" rows="8" cols="80" placeholder="Enter a message" className="animated fadeIn" required></textarea>
         </div>
         <input 
           type="submit" 
           value="Send"
-          className="animated fadeInUp"
+          className="animated fadeIn"
         />
       </form>
     </div>;

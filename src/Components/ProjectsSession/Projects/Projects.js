@@ -41,7 +41,7 @@ class Projects extends Component {
                     }
                 </a>
 
-                <div className="project-description animated fadeInUp">
+                <div className="project-description animated fadeIn">
                     <h2>{title}</h2>
                     {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
                     <p><nobr><span className="show-more" onClick={this.handleClick}>{this.state.hidden ? 'Show More +':'Show Less -'}</span></nobr></p>
