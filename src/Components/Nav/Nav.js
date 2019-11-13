@@ -22,18 +22,26 @@ class Nav extends Component {
     this.state = {
       iconOpen: false,
       skillsClicked: false,
-      skillsState: SkillsContents
+      skillsState: SkillsContents,
+      hideShowMore:true
     }
-
-    this.handleClick = this.handleClick.bind(this);
+    //Nav methods bind
+    this.toggleIcon = this.toggleIcon.bind(this);
+    //Skills methods bind
     this.toogleSkillsBox = this.toogleSkillsBox.bind(this);
     this.closeLayer = this.closeLayer.bind(this);
     this.openLayer = this.openLayer.bind(this);
     this.openAccordeon = this.openAccordeon.bind(this);
+    //Projects session bind
+    this.toggleShowMore = this.toggleShowMore.bind(this);
   } 
+  
+  //Nav methods
+  toggleIcon(){
+    if(window.innerWidth <= 500) this.setState({ iconOpen: !this.state.iconOpen });
+  }
 
-  //skills methods
-
+  //Skills methods
   toogleSkillsBox(e){
     this.setState({ skillsClicked: !this.state.skillsClicked });
   }
@@ -43,7 +51,7 @@ class Nav extends Component {
     const newState = state.map((a, i) => a.open = false);
 
 
-    this.setState({ open: newState  }); 
+    this.setState({ newState  }); 
     if(this.state.skillsClicked) this.toogleSkillsBox();
   }
 
@@ -59,28 +67,29 @@ class Nav extends Component {
         else return a.open = false;
     });
 
-    this.setState({ skillsState: newState  }); 
+    this.setState({ newState }); 
   }
 
-  //Nav methods
-  handleClick(){
-    if(window.innerWidth <= 500) this.setState({ iconOpen: !this.state.iconOpen });
+  //projects session methods
+  toggleShowMore(){
+    this.setState({hideShowMore:!this.state.hideShowMore});
   }
+
 
   render() { 
     return ( 
       <HashRouter>
         <nav> 
           <div id="down-arrow">
-            <div className="dropdown-container" onClick={this.handleClick}>
+            <div className="dropdown-container" onClick={this.toggleIcon}>
               <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
             </div>
           </div>
           <ul id="main-nav" className={this.state.iconOpen ? 'show animated slideInDown' : ''}>
-            <li id="intro-btn"><NavLink exact to='/' onClick={this.handleClick}>Home</NavLink></li>
-            <li id="about-btn"><NavLink to='/about' onClick={this.handleClick}>About</NavLink></li>
-            <li id="projects-btn"><NavLink to='/projects' onClick={this.handleClick}>Projects</NavLink></li>
-            <li id="contact-btn"><NavLink to='/contact' onClick={this.handleClick}>Contact</NavLink></li>
+            <li id="intro-btn"><NavLink exact to='/' onClick={this.toggleIcon}>Home</NavLink></li>
+            <li id="about-btn"><NavLink to='/about' onClick={this.toggleIcon}>About</NavLink></li>
+            <li id="projects-btn"><NavLink to='/projects' onClick={this.toggleIcon}>Projects</NavLink></li>
+            <li id="contact-btn"><NavLink to='/contact' onClick={this.toggleIcon}>Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path='/' component={Home} />
@@ -92,8 +101,14 @@ class Nav extends Component {
                 closeLayer={this.closeLayer}
                 openAccordeon={this.openAccordeon}
                 skillsState={this.state.skillsState}
-              />} />
-            <Route path='/projects' component={ProjectsSession} />
+              />} 
+            />
+            <Route path='/projects' 
+              render={(props) => <ProjectsSession {...props}
+                hideShowMore={this.state.hideShowMore}
+                toggleShowMore={this.toggleShowMore}
+              />}
+            />
             <Route path='/contact' component={Contact}/>
           </div>
         </nav>

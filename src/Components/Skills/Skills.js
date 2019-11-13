@@ -4,7 +4,6 @@ import '../About/About.scss';
 import './Skills.scss';
 
 import SkillsBox from './SkillsBox/SkillsBox';
-// import SkillsExpandBtn from '../SkillsExpandBtn/SkillsExpandBtn';
 
 const Skills = ({skillsClicked, skillsState, openAccordeon, closeLayer}) => 
 

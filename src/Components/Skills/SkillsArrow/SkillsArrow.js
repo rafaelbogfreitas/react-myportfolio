@@ -2,8 +2,8 @@ import React from 'react';
 
 import './SkillsArrow.scss';
 
-const SkillsArrow = (props) => 
-    <svg  className={props.open?"svg-inline--fa fa-chevron-right fa-w-10 skills-arrow turn90":"svg-inline--fa fa-chevron-right fa-w-10 skills-arrow"} 
+const SkillsArrow = ({ open }) => 
+    <svg  className={ open?"svg-inline--fa fa-chevron-right fa-w-10 skills-arrow turn90":"svg-inline--fa fa-chevron-right fa-w-10 skills-arrow"} 
         role="img" 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 320 512">
