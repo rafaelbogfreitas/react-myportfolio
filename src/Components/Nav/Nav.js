@@ -36,12 +36,12 @@ class Nav extends Component {
     this.toggleShowMore = this.toggleShowMore.bind(this);
   } 
   
-  //Nav methods
+  //Nav component methods
   toggleIcon(){
     if(window.innerWidth <= 500) this.setState({ iconOpen: !this.state.iconOpen });
   }
 
-  //Skills methods
+  //Skills component methods
   toogleSkillsBox(e){
     this.setState({ skillsClicked: !this.state.skillsClicked });
   }
@@ -70,7 +70,7 @@ class Nav extends Component {
     this.setState({ newState }); 
   }
 
-  //projects session methods
+  //ProjectsSession component methods
   toggleShowMore(){
     this.setState({hideShowMore:!this.state.hideShowMore});
   }
