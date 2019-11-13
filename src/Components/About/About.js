@@ -5,13 +5,13 @@ import AboutContent from '../../util/AboutContent';
 
 import './About.scss';
 
- const About = () =>
+ const About = ({skillsClicked, skillsState, openAccordeon, closeLayer}) =>
     <div className="about">
         <div className={window.innerWidth <= 600 ? "about-wrap animated fadeInUp" : "about-wrap animated fadeIn"}>
         <h1>About</h1>
             {AboutContent.map((a, i) => <p key={i}>{a}</p>)}
         </div>
-        <Skills />
+        <Skills skillsClicked={skillsClicked} skillsState={skillsState} openAccordeon={openAccordeon} closeLayer={closeLayer}/>
     </div>;
         
  
