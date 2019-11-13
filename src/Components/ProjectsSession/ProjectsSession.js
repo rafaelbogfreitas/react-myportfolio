@@ -4,12 +4,14 @@ import './ProjectsSession.scss';
 
 import ProjectsContent from '../../util/ProjectsContent';
 import Projects from './Projects/Projects';
+import Footer from '../Footer/Footer';
 
 const ProjectsSession = () =>
     
     <div className='projects'>
         <h1>Projects</h1>
         {ProjectsContent.map((a, i) => <Projects key={i} {...a} />)}
+        <Footer />
     </div>;
  
 export default ProjectsSession;
