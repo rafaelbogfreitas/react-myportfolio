@@ -74,9 +74,8 @@ class Nav extends Component {
   toggleShowMore(e){
     let newShowMore = this.state.hideShowMore;
     let newState = newShowMore.map((a, i) => 
-      (e.target.id == i) ? a = !a : a
+      (Number.parseInt(e.target.id) === i) ? a = !a : a
     )
-    console.log(newState);
     this.setState({ hideShowMore: newState });
   }
 

@@ -8,6 +8,5 @@ buildObj("https://github.com/rafaelbogfreitas", "fas fa-code-branch contact-icon
 buildObj("https://twitter.com/RafaelF03113877", "fab fa-twitter-square contact-icons");
 buildObj("https://www.freecodecamp.org/rafaelborges", "fab fa-free-code-camp");
 
-console.log(IconsContent);
 
 export default IconsContent;

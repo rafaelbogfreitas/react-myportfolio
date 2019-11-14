@@ -24,7 +24,6 @@ const Projects =
             <img src={imgSrc}
                 alt={alt}
                 className='animated fadeIn'
-                SameSite="None"
             />
         </a>
 
