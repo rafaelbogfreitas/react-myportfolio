@@ -23,7 +23,7 @@ class Nav extends Component {
       iconOpen: false,
       skillsClicked: false,
       skillsState: SkillsContents,
-      hideShowMore:true
+      hideShowMore:[...Array(7)].map(a => a = true)
     }
     //Nav methods bind
     this.toggleIcon = this.toggleIcon.bind(this);
@@ -71,8 +71,13 @@ class Nav extends Component {
   }
 
   //ProjectsSession component methods
-  toggleShowMore(){
-    this.setState({hideShowMore:!this.state.hideShowMore});
+  toggleShowMore(e){
+    let newShowMore = this.state.hideShowMore;
+    let newState = newShowMore.map((a, i) => 
+      (e.target.id == i) ? a = !a : a
+    )
+    console.log(newState);
+    this.setState({ hideShowMore: newState });
   }
 
 

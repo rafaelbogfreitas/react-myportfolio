@@ -14,7 +14,8 @@ const Projects =
         linkGitHub, 
         extraLink,
         toggleShowMore,
-        hideShowMore
+        hideShowMore,
+        id
     }) =>
         
     <div className="project-container">
@@ -30,7 +31,7 @@ const Projects =
         <div className="project-description animated fadeIn">
             <h2>{title}</h2>
             {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
-            <p><nobr><span className="show-more" onClick={toggleShowMore}>{hideShowMore ? 'Show More +':'Show Less -'}</span></nobr></p>
+            <p><nobr><span className="show-more" id={id} onClick={(e)=>toggleShowMore(e)}>{hideShowMore ? 'Show More +':'Show Less -'}</span></nobr></p>
 
             <section className="more" style={ hideShowMore ? { 'display': 'none'} : { 'display': 'block'}}>
                 <p>{extraParagraph}{extraLink ? <a href={href}>{href}</a> : ''}</p>
