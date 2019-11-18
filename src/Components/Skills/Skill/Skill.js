@@ -6,11 +6,27 @@ import SkillsBody from '../SkillsBody/SkillsBody';
 
 import './Skill.scss';
 
-const Skill = (props) =>
-    <div className="skills-section">
-        <SkillsTitle title={props.title} open={props.open} onClick={props.onClick} id={props.id}/>
-        <SkillsBody {...props}/>
-    </div>
+class Skill extends React.Component {
+
+    shouldComponentUpdate(nextProps){
+        return this.props.open !== nextProps.open;
+    }
+
+    render(){
+        const {title, open, onClick, id } = this.props;
+        return (
+            <div className="skills-section">
+                <SkillsTitle 
+                    title={title} 
+                    open={open} 
+                    onClick={onClick} 
+                    id={id}
+                />
+                <SkillsBody {...this.props}/>
+            </div> 
+        )
+    }
+}
 
 Skill.propTypes = {
     title: PropTypes.string.isRequired, 

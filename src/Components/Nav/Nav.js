@@ -13,6 +13,7 @@ import ProjectsSession from '../ProjectsSession/ProjectsSession';
 import SkillsContents from '../../util/SkillsContents';
 
 import './Nav.scss';
+import ProjectsContent from '../../util/ProjectsContent';
 
 class Nav extends Component {
 
@@ -23,7 +24,7 @@ class Nav extends Component {
       iconOpen: false,
       skillsClicked: false,
       skillsState: SkillsContents,
-      hideShowMore:[...Array(7)].map(a => a = true)
+      hideShowMore:[...Array(ProjectsContent.length)].map(a => a = true)
     }
     //Nav methods bind
     this.toggleIcon = this.toggleIcon.bind(this);
@@ -115,6 +116,7 @@ class Nav extends Component {
             />
             <Route path='/contact' component={Contact}/>
           </div>
+          {console.log(this.props)}
         </nav>
       </HashRouter> 
     );
