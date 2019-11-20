@@ -1,3 +1,11 @@
+@import '../../../index.scss';
+
 .github-icon {
     animation: pulse 4s linear infinite 1s;
+}
+
+.react-logo {
+    // margin: 0;
+    color:darken($secondary-color, 10%);
+    animation: rotate2 5s linear infinite;
 }

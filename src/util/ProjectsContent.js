@@ -49,7 +49,7 @@ const ProjectsContent = [
     },
 
     {
-        title: 'Rafael Freitas Web Development - Portfolio',
+        title: 'Rafael Freitas Web Development',
 
         href: 'https://www.rafaelfreitas.co.uk/',
 
