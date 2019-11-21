@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import {
   Route,
@@ -13,36 +13,29 @@ import ProjectsSession from '../ProjectsSession/ProjectsSession';
 
 import './Nav.scss';
 
-class Nav extends Component {
+const Nav = () => {
+  
+  useEffect(() => {
+    window.addEventListener('resize', function() {
+      if(window.innerWidth > 500) setIconOpen(false)
+    })
+  });
 
-  constructor(props){
-    super(props);
-
-    this.state = {
-      iconOpen: false,
-    }
-
-    this.handleClick = this.handleClick.bind(this);
-  } 
-
-  handleClick(){
-    if(window.innerWidth <= 500) this.setState({ iconOpen: !this.state.iconOpen });
-  }
-
-  render() { 
+  const [iconOpen, setIconOpen] = useState(false);
+  // render() { 
     return ( 
       <HashRouter>
         <nav> 
           <div id="down-arrow">
-            <div className="dropdown-container" onClick={this.handleClick}>
-              <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
+            <div className="dropdown-container" onClick={() => setIconOpen(!iconOpen)}>
+              <span className={iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
             </div>
           </div>
-          <ul id="main-nav" className={this.state.iconOpen ? 'show animated slideInDown' : ''}>
-            <li id="intro-btn"><NavLink exact to='/' onClick={this.handleClick}>Home</NavLink></li>
-            <li id="about-btn"><NavLink to='/about' onClick={this.handleClick}>About</NavLink></li>
-            <li id="projects-btn"><NavLink to='/projects' onClick={this.handleClick}>Projects</NavLink></li>
-            <li id="contact-btn"><NavLink to='/contact' onClick={this.handleClick}>Contact</NavLink></li>
+          <ul id="main-nav" className={iconOpen ? 'show animated slideInDown' : ''}>
+            <li id="intro-btn"><NavLink exact to='/' onClick={() => window.innerWidth <= 500 ? setIconOpen(!iconOpen) : null}>Home</NavLink></li>
+            <li id="about-btn"><NavLink to='/about' onClick={() => window.innerWidth <= 500 ? setIconOpen(!iconOpen) : null}>About</NavLink></li>
+            <li id="projects-btn"><NavLink to='/projects' onClick={() => window.innerWidth <= 500 ? setIconOpen(!iconOpen) : null}>Projects</NavLink></li>
+            <li id="contact-btn"><NavLink to='/contact' onClick={() => window.innerWidth  <= 500 ? setIconOpen(!iconOpen) : null}>Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path='/' component={Home} />
@@ -53,7 +46,7 @@ class Nav extends Component {
         </nav>
       </HashRouter> 
     );
-  }
+  // }
 }
  
 export default Nav;
