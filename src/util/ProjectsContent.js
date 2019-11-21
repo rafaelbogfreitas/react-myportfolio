@@ -44,7 +44,8 @@ const ProjectsContent = [
             'JavaScript',
             'JQuery',
             'NPM (gulp-uglify, concat, compass, html-minify, cssnano)',
-            'Mustache.js'
+            'Mustache.js',
+            'Git and GitHub'
         ]
     },
 
@@ -141,7 +142,7 @@ const ProjectsContent = [
           'JQuery',
           'Browserify and Watchify',
           'Common.js',
-          'Git and GitHub '
+          'Git and GitHub'
         ]
     },
 

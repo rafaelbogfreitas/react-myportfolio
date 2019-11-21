@@ -5,24 +5,19 @@
 }
 
 
+.react-logo {
+    animation: rotate2 5s linear infinite;
+}
 .tech-icons-container {
-    width:90%;
-    margin-top:20px;
-    @include flex(display, flex);
-    @include flex(justify-content, space-between);
     // @include medium {
     //     @include flex(flex-direction, column);
     // }
-    .react-logo {
-        animation: rotate2 5s linear infinite;
-    }
 
     .logo-icons{
         margin-right: 5px;
         color:darken($secondary-color, 10%);
     }
     svg {
-        width:30px;
         width:2em;
         height:2em;
     }

@@ -49,26 +49,30 @@ class Projects extends Component {
                 icons.push(<FaCss3 className='logo-icons'/>); 
             }
             if(name.match('javascript')){
-                icons.push( <DiJavascript1 className='logo-icons'/>)
+                icons.push(<DiJavascript1 className='logo-icons'/>)
             }
             if(name.match('react js')){
-                icons.push( <FaReact className='logo-icons react-logo'/>)
+                icons.push(<FaReact className='logo-icons react-logo'/>)
             }
             if(name.match('sass')){
-                icons.push( <FaSass className='logo-icons'/>)
+                icons.push(<FaSass className='logo-icons'/>)
             }
             if(name.match('jquery')){
-                icons.push( <DiJqueryLogo className='logo-icons'/>)
+                icons.push(<DiJqueryLogo className='logo-icons'/>)
             }
             if(name.match('git')){
-                icons.push( <FaGit className='logo-icons'/>)
-            }
+                icons.push(<FaGit className='logo-icons'/>)
+            } 
+                
             
         };
+
         
-        let iconsContainer = <div className="tech-icons-container">{icons.map(a=>a)}</div>;
+        // let iconsContainer = <div className="tech-icons-container">{icons.map(a => a)}</div>;
         
-        return iconsContainer;
+        // return iconsContainer;
+
+        return icons;
        
     }
    
@@ -88,28 +92,49 @@ class Projects extends Component {
                             SameSite="None"
                         />
                     }
-                    {this.pickIcon(technologies)}    
                 </a>
 
                 <div className="project-description animated fadeIn">
                     {
                         this.state.react ?
-                        <h2><FaReact className="react-logo" width={'2em'}/> {title}</h2> :
+                        <h2><FaReact className="react-logo"/>{title}</h2> :
                         <h2>{title}</h2>
                     }
                     
                     {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
-                    <p><nobr><span className="show-more" onClick={this.handleClick}>{this.state.hidden ? 'Show More +':'Show Less -'}</span></nobr></p>
+                    <p>
+                        <nobr>
+                            <span 
+                                className="show-more" 
+                                onClick={this.handleClick}>
+                                {this.state.hidden ? 
+                                    'Show More +':
+                                    'Show Less -'
+                                }
+                            </span>
+                        </nobr>
+                    </p>
 
-                    <section className="more" style={this.state.hidden ? { 'display': 'none'} : { 'display': 'block'}}>
+                    <section 
+                        className="more" 
+                        style={this.state.hidden ? 
+                            { 'display': 'none'} : 
+                            { 'display': 'block'}
+                        }>
                         <p>{extraParagraph}{extraLink ? <a href={href}>{href}</a> : ''}</p>
                         <aside>
                             <h3>Technologies used:</h3>
                             <ul>
-                                {technologies.map((a,i) => <li key={i}>{a}</li>)}
-                            <li><a href={linkGitHub} target="_blank" rel='noreferrer noopener'>
-                                <i className="fab fa-github-square github-icon"></i>
-                            </a></li>
+                                {this.pickIcon(technologies).map((a, i) => <li key={i}><div className="tech-icons-container">{a}</div></li>)}
+                                <li>
+                                    <a 
+                                        href={linkGitHub} 
+                                        target="_blank" 
+                                        rel='noreferrer noopener'
+                                        >
+                                        <i className="fab fa-github-square github-icon"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </aside>
                     </section>
