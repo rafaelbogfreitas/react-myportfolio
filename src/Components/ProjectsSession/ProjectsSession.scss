@@ -42,6 +42,12 @@
       }
     }
 
+    @include medium {
+      &>a{
+        @include flex(flex-direction, column);
+      }
+    }
+
     @include large {
       @include flex(flex-direction, column);
       @include flex(justify-content, center);

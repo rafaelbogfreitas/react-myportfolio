@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 import './Projects.scss';
 import Loading from '../../Loading/Loading';
-import { FaReact } from 'react-icons/fa';
+import { FaReact, FaSass, FaCss3, FaHtml5, FaGit } from 'react-icons/fa';
+import { DiJqueryLogo, DiJavascript1 } from 'react-icons/di';
 
 class Projects extends Component {
     constructor(props){
@@ -36,6 +37,42 @@ class Projects extends Component {
         }
     }
 
+    pickIcon(technologies){
+        let icons = [];
+        
+        for(let name of technologies){
+            name = name.toLowerCase();
+            if(name.match('html5')){
+                icons.push(<FaHtml5 className='logo-icons'/>); 
+            }
+            if(name.match('css3')){
+                icons.push(<FaCss3 className='logo-icons'/>); 
+            }
+            if(name.match('javascript')){
+                icons.push( <DiJavascript1 className='logo-icons'/>)
+            }
+            if(name.match('react js')){
+                icons.push( <FaReact className='logo-icons react-logo'/>)
+            }
+            if(name.match('sass')){
+                icons.push( <FaSass className='logo-icons'/>)
+            }
+            if(name.match('jquery')){
+                icons.push( <DiJqueryLogo className='logo-icons'/>)
+            }
+            if(name.match('git')){
+                icons.push( <FaGit className='logo-icons'/>)
+            }
+            
+        };
+        
+        let iconsContainer = <div className="tech-icons-container">{icons.map(a=>a)}</div>;
+        
+        return iconsContainer;
+       
+    }
+   
+
     render() {
         const { title, href, alt, imgSrc, paragraphs, extraParagraph, technologies, linkGitHub, extraLink} = this.props;
         return (
@@ -44,13 +81,14 @@ class Projects extends Component {
                 <a href={href} target="_blank" rel='noreferrer noopener'>
                     {
                         this.state.loading ?
-                        <Loading className="react-logo"/> :
+                        <Loading /> :
                         <img src={imgSrc}
                             alt={alt}
                             className='animated fadeIn'
                             SameSite="None"
                         />
                     }
+                    {this.pickIcon(technologies)}    
                 </a>
 
                 <div className="project-description animated fadeIn">
@@ -59,6 +97,7 @@ class Projects extends Component {
                         <h2><FaReact className="react-logo" width={'2em'}/> {title}</h2> :
                         <h2>{title}</h2>
                     }
+                    
                     {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
                     <p><nobr><span className="show-more" onClick={this.handleClick}>{this.state.hidden ? 'Show More +':'Show Less -'}</span></nobr></p>
 
