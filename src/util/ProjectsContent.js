@@ -21,7 +21,7 @@ const ProjectsContent = [
         imgSrc: img1,
 
         paragraphs: [
-            `This was my first commercial project, developed for a client who works as a musician.
+            `Project developed for a client who works as a musician.
             He asked me for a website where he could show his music and videos and have a short 'about me'
             to introduce himself and work. He had no idea of how he wanted it to look like, so I also
             designed the page.`,
