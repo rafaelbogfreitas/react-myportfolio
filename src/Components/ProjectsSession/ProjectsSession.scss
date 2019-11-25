@@ -29,7 +29,8 @@
     height: auto;
     border-bottom: 1px solid $secondary-color;
 
-    &:last-child {
+    &:last-of-type {
+      border-top:0px;
       border-bottom: 0px;
     }
 
