@@ -15,13 +15,14 @@ import './Nav.scss';
 
 const Nav = () => {
   
+  const [iconOpen, setIconOpen] = useState(false);
+  
   useEffect(() => {
     window.addEventListener('resize', function() {
       if(window.innerWidth > 500) setIconOpen(false)
     })
   });
 
-  const [iconOpen, setIconOpen] = useState(false);
   // render() { 
     return ( 
       <HashRouter>

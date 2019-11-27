@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import './Projects.scss';
-import Loading from '../../Loading/Loading';
+// import Loading from '../../Loading/Loading';
 import { FaReact } from 'react-icons/fa';
 
 const Projects = ({title, paragraphs, alt, imgSrc, href, extraParagraph, extraLink, technologies, linkGitHub}) => {
+    
     const [ hidden, setHidden ] = useState(true);
     const [ react, setReact ] = useState(false);
     
@@ -17,7 +18,7 @@ const Projects = ({title, paragraphs, alt, imgSrc, href, extraParagraph, extraLi
         <div className="project-container">
 
             <a href={href} target="_blank" rel='noreferrer noopener'>
-    
+
                 <img src={imgSrc}
                     alt={alt}
                     className='animated fadeIn'
