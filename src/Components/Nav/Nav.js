@@ -10,6 +10,7 @@ import Home from '../Home/Home';
 import Contact from '../Contact/Contact';
 import About from '../About/About';
 import ProjectsSession from '../ProjectsSession/ProjectsSession';
+import Curriculum from '../Curriculum/Curriculum';
 
 import './Nav.scss';
 
@@ -36,6 +37,7 @@ const Nav = () => {
             <li id="about-btn"><NavLink to='/about' onClick={() => window.innerWidth <= 500 ? setIconOpen(!iconOpen) : null}>About</NavLink></li>
             <li id="projects-btn"><NavLink to='/projects' onClick={() => window.innerWidth <= 500 ? setIconOpen(!iconOpen) : null}>Projects</NavLink></li>
             <li id="contact-btn"><NavLink to='/contact' onClick={() => window.innerWidth  <= 500 ? setIconOpen(!iconOpen) : null}>Contact</NavLink></li>
+            <Curriculum />
           </ul>
           <div className="content">
             <Route exact path='/' component={Home} />

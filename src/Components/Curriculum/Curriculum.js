@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Curriculum = () => <a download="../src/images/rafael_freitas_cv.pdf" className="curriculum">Download CV</a>;
+import './Curriculum.scss';
+
+const Curriculum = () => <a href="/files/rafael_freitas_cv.pdf" className="curriculum" download="rafael_freitas_cv">Download CV</a>;
 
 export default Curriculum;
