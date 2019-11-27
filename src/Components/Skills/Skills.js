@@ -12,8 +12,6 @@ const Skills = () => {
 
     const [ clicked, setClicked ] = useState(false);
     const [ accordeon, setAccordeon ] = useState(SkillsContents);
-    const [ open , setOpen ] = useState([]);
-    console.log(accordeon);
     // constructor(props){
     //     super(props);
 
@@ -30,25 +28,25 @@ const Skills = () => {
         
     // }
 
-    const handleClick = (e) => {
+    const handleClick = () => {
         // this.setState({ clicked: !this.state.clicked });
         setClicked(!clicked);
     }
     
-    const closeLayer = (e) => {
+    const closeLayer = () => {
         // const state = this.state.state;
-        const state = accordeon;
+        let state = accordeon;
 
-        const newState = state.map((a, i) => a.open = false);
+        const newState = state.map((a, i) => {return { ...a, open: false }});
     
     
         // this.setState({ open: newState  }); 
         // if(this.state.clicked) this.handleClick();
-        setOpen(newState);
+        setAccordeon(newState);
         if(clicked) handleClick();
     }
     
-    const openLayer = (e) => {
+    const openLayer = () => {
         // if(!this.state.clicked) this.handleClick();
         if(!clicked) handleClick();
     }
@@ -56,16 +54,16 @@ const Skills = () => {
     const openAccordeon = (e) => {
         openLayer();
         // const state = this.state.state;
-        const state = accordeon;
+        let state = accordeon;
         console.log(state)
         // const newState = state.map((a, i) => {
         const newState = state.map((a, i) => {
-            if(a.title === e.target.id && !a.open) return a.open = true;
-            else return a.open = false;
+            if(a.title === e.target.id && !a.open) return { ...a, open : true};
+            else return { ...a, open: false };
         });
 
         // this.setState({ open: newState  }); 
-        setOpen(newState);
+        setAccordeon(newState);
     }
 
 
