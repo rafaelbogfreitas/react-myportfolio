@@ -120,7 +120,9 @@ class Nav extends Component {
             </li>
           </ul>
           <div className="content">
-            <Route exact path='/' component={Home} />
+            <Route exact path='/'  
+                   render={() => <Home lang={this.state.lang}/>}
+            />
             <Route path='/about' 
               render={(props) => <About {...props} 
                 skillsClicked={this.state.skillsClicked} 
