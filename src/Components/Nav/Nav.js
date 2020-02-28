@@ -21,6 +21,7 @@ class Nav extends Component {
     super(props);
 
     this.state = {
+      lang: true,
       iconOpen: false,
       skillsClicked: false,
       skillsState: SkillsContents,
@@ -35,11 +36,16 @@ class Nav extends Component {
     this.openAccordeon = this.openAccordeon.bind(this);
     //Projects session bind
     this.toggleShowMore = this.toggleShowMore.bind(this);
+    this.toggleLang = this.toggleLang.bind(this);
   } 
   
   //Nav component methods
   toggleIcon(){
     if(window.innerWidth <= 500) this.setState({ iconOpen: !this.state.iconOpen });
+  }
+
+  toggleLang(){
+    this.setState({ lang: !this.state.lang});
   }
 
   //Skills component methods
@@ -85,16 +91,33 @@ class Nav extends Component {
     return ( 
       <HashRouter>
         <nav> 
+          <input className="lang-toggler" type="checkbox" onClick={() => this.toggleLang()}/>
           <div id="down-arrow">
             <div className="dropdown-container" onClick={this.toggleIcon}>
               <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
             </div>
           </div>
           <ul id="main-nav" className={this.state.iconOpen ? 'show animated slideInDown' : ''}>
-            <li id="intro-btn"><NavLink exact to='/' onClick={this.toggleIcon}>Home</NavLink></li>
-            <li id="about-btn"><NavLink to='/about' onClick={this.toggleIcon}>About</NavLink></li>
-            <li id="projects-btn"><NavLink to='/projects' onClick={this.toggleIcon}>Projects</NavLink></li>
-            <li id="contact-btn"><NavLink to='/contact' onClick={this.toggleIcon}>Contact</NavLink></li>
+            <li id="intro-btn">
+              <NavLink exact to='/' onClick={this.toggleIcon}>
+                {this.state.lang ? "Inicio" : "Home"}
+              </NavLink>
+            </li>
+            <li id="about-btn">
+              <NavLink to='/about' onClick={this.toggleIcon}>
+                {this.state.lang ? "Sobre" : "About"}
+              </NavLink>
+            </li>
+            <li id="projects-btn">
+              <NavLink to='/projects' onClick={this.toggleIcon}>
+                {this.state.lang ? "Projetos" : "Projects"}
+              </NavLink>
+            </li>
+            <li id="contact-btn">
+              <NavLink to='/contact' onClick={this.toggleIcon}>
+                {this.state.lang ? "Contato" : "Contact"}
+              </NavLink>
+            </li>
           </ul>
           <div className="content">
             <Route exact path='/' component={Home} />

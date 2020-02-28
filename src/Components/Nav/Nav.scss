@@ -2,6 +2,15 @@
 //     NAV session styles                        //
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=---=-=-=-=-=--=--//=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-
 @import '../../index.scss';
+.lang-toggler {
+  position: fixed;
+  top:1;
+  right:50;
+  z-index:11;
+  width: 30px;
+  height: 30px;
+  background-color: $secondary-color;
+}
 
 #main-nav {
   @include flex(display, flex);
