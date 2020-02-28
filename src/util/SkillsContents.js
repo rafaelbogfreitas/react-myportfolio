@@ -1,5 +1,7 @@
 const SkillsContents = [
-    {
+    {   
+        'titlept': 'Habilidades',
+
         title: 'Skills',
 
         contents: [
@@ -65,7 +67,9 @@ const SkillsContents = [
         open:false
     },
 
-    {
+    {   
+        'titlept': 'Ferramentas',
+
         title: 'Tools',
 
         contents: [
@@ -104,7 +108,9 @@ const SkillsContents = [
         author: []
     },
 
-    {
+    {   
+        'titlept': 'Livros',
+
         title: 'Books',
 
         books:[
@@ -173,7 +179,10 @@ const SkillsContents = [
     },
 
     {
+        'titlept': 'Cursos',
+
         title: 'Resources',
+
         contents:[
             {
                 title:``,
@@ -208,7 +217,9 @@ const SkillsContents = [
         open: false
     },
 
-    {
+    {   
+        'titlept': 'Interesses',
+
         title: 'Interests',
 
         contents:[

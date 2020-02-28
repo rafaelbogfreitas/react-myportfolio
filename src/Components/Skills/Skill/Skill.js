@@ -9,18 +9,21 @@ import './Skill.scss';
 class Skill extends React.Component {
 
     shouldComponentUpdate(nextProps){
-        return this.props.open !== nextProps.open;
+
+        return this.props.open !== nextProps.open | this.props.lang !== nextProps.lang;
     }
 
     render(){
-        const {title, open, onClick, id } = this.props;
+        const {title, titlept, open, onClick, id, lang } = this.props;
         return (
             <div className="skills-section">
                 <SkillsTitle 
                     title={title} 
+                    titlept={titlept}
                     open={open} 
                     onClick={onClick} 
                     id={id}
+                    lang={lang}
                 />
                 <SkillsBody {...this.props}/>
             </div> 

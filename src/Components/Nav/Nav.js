@@ -131,6 +131,7 @@ class Nav extends Component {
                 closeLayer={this.closeLayer}
                 openAccordeon={this.openAccordeon}
                 skillsState={this.state.skillsState}
+                lang={this.state.lang}
               />} 
             />
             <Route path='/projects' 
@@ -139,7 +140,13 @@ class Nav extends Component {
                 toggleShowMore={this.toggleShowMore}
               />}
             />
-            <Route path='/contact' component={Contact}/>
+            <Route 
+              path='/contact' 
+              render={() => <Contact
+                lang={this.state.lang}
+              />}
+
+            />
           </div>
           {console.log(this.props)}
         </nav>
