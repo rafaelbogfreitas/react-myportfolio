@@ -4,19 +4,11 @@ import PropTypes from 'prop-types';
 import './Projects.scss';
 
 class Projects extends React.Component {
-
-    // UNSAFE_componentWillMount(){
-    //     this.style = { backgroundColor: 'gray' };
-    // }
     
     shouldComponentUpdate(nextProps){
-        return this.props.hideShowMore !== nextProps.hideShowMore
+        return this.props.hideShowMore !== nextProps.hideShowMore |
+        this.props.lang !== nextProps.lang
     }
-    
-    // UNSAFE_componentWillUpdate(nextProps){
-    //     this.style = null;
-    // }
-
     
     render(){
         const { 
@@ -31,7 +23,8 @@ class Projects extends React.Component {
             extraLink,
             toggleShowMore,
             hideShowMore,
-            id
+            id,
+            lang
         }  =  this.props;
 
         return (
@@ -48,11 +41,18 @@ class Projects extends React.Component {
 
                 <div className="project-description animated fadeIn">
                     <h2>{title}</h2>
-                    {paragraphs.map((a, i) => <p key={i}>{a}</p>)}
+                    {paragraphs.map((a, i) => lang ? <p key={i}>{a.ptbr}</p> : <p key={i}>{a.eng}</p>)}
                     <p><nobr><span className="show-more" id={id} onClick={(e)=>toggleShowMore(e)}>{hideShowMore ? 'Show More +':'Show Less -'}</span></nobr></p>
 
                     <section className="more" style={ hideShowMore ? { 'display': 'none'} : { 'display': 'block'}}>
-                        <p>{extraParagraph}{extraLink ? <a href={href}>{href}</a> : ''}</p>
+                        {   
+                            extraParagraph.map( a => 
+                                lang ? 
+                                <p>{a.ptbr}{extraLink ? <a href={href}>{href}</a> : ''}</p> :
+                                <p>{a.eng}{extraLink ? <a href={href}>{href}</a> : ''}</p>
+
+                            )
+                        }
                         <aside>
                             <h3>Technologies used:</h3>
                             <ul>

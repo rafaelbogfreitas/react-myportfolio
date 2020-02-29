@@ -138,6 +138,7 @@ class Nav extends Component {
               render={(props) => <ProjectsSession {...props}
                 hideShowMore={this.state.hideShowMore}
                 toggleShowMore={this.toggleShowMore}
+                lang={this.state.lang}
               />}
             />
             <Route 
@@ -148,7 +149,6 @@ class Nav extends Component {
 
             />
           </div>
-          {console.log(this.props)}
         </nav>
       </HashRouter> 
     );
