@@ -11,6 +11,7 @@ import Contact from '../Contact/Contact';
 import About from '../About/About';
 import ProjectsSession from '../ProjectsSession/ProjectsSession';
 import SkillsContents from '../../util/SkillsContents';
+import Switch from '../Switch/Switch';
 
 import './Nav.scss';
 import ProjectsContent from '../../util/ProjectsContent';
@@ -21,7 +22,7 @@ class Nav extends Component {
     super(props);
 
     this.state = {
-      lang: true,
+      lang:true,
       iconOpen: false,
       skillsClicked: false,
       skillsState: SkillsContents,
@@ -91,7 +92,7 @@ class Nav extends Component {
     return ( 
       <HashRouter>
         <nav> 
-          <input className="lang-toggler" type="checkbox" onClick={() => this.toggleLang()}/>
+          <Switch onClick={this.toggleLang} lang={this.state.lang}/>
           <div id="down-arrow">
             <div className="dropdown-container" onClick={this.toggleIcon}>
               <span className={this.state.iconOpen ? "dropdown-icon dropdown-icon-closed" : "dropdown-icon"}></span>
