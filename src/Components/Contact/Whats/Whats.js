@@ -4,7 +4,7 @@ import './Whats.scss';
 
 const Whats = () => 
     <div className="animated fadeIn whats-container">
-     <a href="https://wa.me/5511941267088" target="_blank">
+     <a href="https://wa.me/5511941267088" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
      </a>
     </div>

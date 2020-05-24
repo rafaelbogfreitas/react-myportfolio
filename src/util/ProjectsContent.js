@@ -14,46 +14,36 @@ const ProjectsContent = [
 
     linkGitHub:'https://github.com/rafaelbogfreitas/type-game',
 
-    alt: 'pic of JWorldMusic front page',
+    alt: 'gif of type game intro screen',
 
-    extraLink: true,
+    extraLink: false,
 
     imgSrc: 'https://media.giphy.com/media/RibdPww2KL1PBgLjXC/giphy.gif',
 
     paragraphs: [
       {
-        ptbr: "",
-        eng: `Project developed for a client who works as a musician.
-        He asked me for a website where he could show his music and videos and have a short 'about me'
-        to introduce himself and work. He had no idea of how he wanted it to look like, so I also
-        designed the page.`
+        ptbr: "No meu retorno de Londres ao Brasil, resolvi entrar para um Bootcamp para aprimorar os conhecimentos que havia adquirido no decorrer de 10 meses estudando sozinho. O primeiro projeto que tive que criar para o curriculum do curso foi um jogo desenvolvido com vanilla JavaScript e manipulação de DOM.",
+        eng: `When returning to Brazil after spending 7 years in London, I decided to subscribe to a Bootmcamp in São Paulo. For my first project there I had to delivery a game using vanilla Javascript and DOM manipulation.`
       },
       {
-        ptbr: "",
-        eng: `In this project, I was more advanced with SASS, JavaScript and JQuery, so I had liberty
-        for getting more creative. Mixins were used to automate the inclusion of vendor prefixes for flex-box.
-        With JQuery and JavaScript, I designed a simple song player which uses Mustache template to create the markup
-        for every song. To create the player logics was probably the most
-        challenging part of the project.`
+        ptbr: "Assim nasceu T!PE, um jogo de digitação com o objetivo de treinar a velocidade do digitador e ensinar as formas geométricas. O jogo é autoral e todo o Design foi criado por mim. Tive a chance de utilizar CSS moderno com o pre-processador SASS, para fazer animações e transformar T!PE num jogo não somente divertido mas visualmente belo e minimalista.",
+        eng: `This is how T!PE was born. A game to help people to learn geometric shapes and to type quickly. It is also a good way to become good in handling problems while under pressure. I design and developed the game inspired by my enthusiasm with puzzles and minimalism. To achieve the final result I have used modern CSS and SASS preprocessors.`
       }  
     ],
 
     extraParagraph: [
       {
-        ptbr:`Teste teste teste`,
-        eng:`I was also comfortable with GULP and organized my working environment with modules and partials
-        to keep the code  maintainable. I set up commands to minify all the code and pipe it to a distribution
-        folder which I am hosting on Netlify. Website is live at:`
+        ptbr:`A criação de T!PE me ajudou a aprender como utilizar classes e como manter meu código organizado e consequentemente fácil de se manter.`,
+        eng:`T!PE's development helped me learn through practice how to use JavaScript Classes to keep my code organized and therefore maintainable`
       }
     ],
 
     technologies: [
         'HTML5',
-        'SASS with COMPASS',
+        'CSS3 - Flexbox, KeyFrames',
+        'SASS',
         'JavaScript',
-        'JQuery',
-        'NPM (gulp-uglify, concat, compass, html-minify, cssnano)',
-        'Mustache.js'
+        'NPM (gulp-uglify, concat, html-minify, cssnano)',
     ]
 },
 
@@ -286,7 +276,7 @@ const ProjectsContent = [
 
         paragraphs: [
           {
-            ptbr:``,
+            ptbr:`Esse foi o terceiro projeto que desenvolvi para o primeiro curriculum do Free Code Camp. A idéia era criar uma landing page para uma loja fictícia, com HTML acessível e tags semânticas. O desenvolvimento foi um processo divertido e ótimo para praticar CSS e HTML e desenvolver mais minhas habilidades. Nele iniciei minha experiência com animações, Transforms e Transitions, assim como aprimorei meu conhecimento de Flexbox e pratiquei validação de formulários com HTML.`,
             eng:`This is the third project I created for Free Code Camp's curriculum on responsive
             web design. I had to deliver a product landing page, using accessible HTML5, flexbox,
             form elements, and a banner. I took the opportunity to expand my CSS3 knowledge, learning how to
@@ -297,7 +287,7 @@ const ProjectsContent = [
 
         extraParagraph: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:``,
             eng:``
           }
         ],

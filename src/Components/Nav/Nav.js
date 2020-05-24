@@ -101,7 +101,7 @@ class Nav extends Component {
           <ul id="main-nav" className={this.state.iconOpen ? 'show animated slideInDown' : ''}>
             <li id="intro-btn">
               <NavLink exact to='/' onClick={this.toggleIcon}>
-                {this.state.lang ? "Inicio" : "Home"}
+                {this.state.lang ? "Início" : "Home"}
               </NavLink>
             </li>
             <li id="about-btn">
