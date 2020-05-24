@@ -231,7 +231,8 @@ const ProjectsContent = [
 
         paragraphs: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`Seguind o primeiro curriculum do Free Code Camp, desenvolvi o quarto projeto, uma página de documentação responsiva. Utilizei HTML semântica e organizado, assim como CSS moderno e responsivo.
+            Nesse projeto resolvi ir além dos requisitos propostos e incluir funcionalidade combinado Javascript e posicionamento utilizando a propriedade de Flexbox 'order' para adicionar uma barra de navegação dinâmica e melhorar a interação do usuário. Para a responsividade utilizei Media Queries e unidades relativas (rem).`,
             eng:`In this project, I created a documentation page as requested by Free Code Camp in their fourth project for
             responsive web designer curriculum. I have written comprehensive and accessible HTML5, used flex box for the page
             layout and even though not recommended for FCC, created functionality with JavaScript + Flexbox properties to change
@@ -239,7 +240,7 @@ const ProjectsContent = [
             media queries and 'rem' size units to make the website responsive.`
           },
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`Mais uma vez pratiquei animação fazendo uso de transforms e transitions para deixar as mudanças de estados mais bonitas e naturais. Esse projeto marcou uma transição no meu desenvolvimento, pois já tinha mais domínio sobre as tecnologias que estava estudando e me sentia comfortável para criar com liberdade.`,
             eng:`I have used transitions with different delay times to make the moving of the navigation bar and the buttons smooth.
             I was excited about this project as I had more knowledge and was feeling comfortable and confident in creating
             the features the way I wanted.`
@@ -248,7 +249,7 @@ const ProjectsContent = [
 
         extraParagraph: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:``,
             eng:``
           }
         ],
