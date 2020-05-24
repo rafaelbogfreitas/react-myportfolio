@@ -275,7 +275,7 @@ const ProjectsContent = [
 
         paragraphs: [
           {
-            ptbr:``,
+            ptbr:`Seguindo com o curriculum de Desenvolvimento Web Responsivo no Free Code Camp, me deparei com um novo desafio: os Formulários. Aprendi a utilizá-los de maneira semântica e sobre seu funcionamento assim como expandi meus conhecimentos sobre desenvolvimento responsivo com uso de Media Queries Flexbox e CSS grid.`,
             eng:`The second project I did for Free Code Camp. Its idea was to start working with forms
             and responsive web design, altering the layout according to the screen size. I made broader use
             of the media queries and started exploring form elements, also expanded my habilities with CSS3.`
@@ -284,7 +284,7 @@ const ProjectsContent = [
 
         extraParagraph: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:``,
             eng:``
           }
         ],
@@ -311,7 +311,8 @@ const ProjectsContent = [
 
         paragraphs: [
           {
-            ptbr:`Quando comecei a aprender Desenvolvimento Web por iniciativa própria, decidi seguir o curriculum do site 'Free Code Camp', focado em Desenvolvimento Full-Stack com JavaScript. O primeiro curso do 6 que eles oferecem foi essencial pra trilhar meu caminho como Desenvolvedor já que aprendi conceitos básicos porém essenciais como Responsividade, Acessibilidade e HTML semântico. Assim como a importância de escrever código organizado e fácil de manter.`,
+            ptbr:`Quando comecei a aprender Desenvolvimento Web por iniciativa própria, decidi seguir o curriculum do site 'Free Code Camp' que é focado em Desenvolvimento Full-Stack com JavaScript. O primeiro curso do 6 que eles oferecem foi essencial pra trilhar meu caminho como Desenvolvedor já que aprendi conceitos básicos porém essenciais como Responsividade, Acessibilidade e HTML semântico. Assim como a importância de escrever código organizado e fácil de ser mantido.`,
+
             eng:`This is my first project ever, when I decided to take on the Free Code Camp's
             responsive web development curriculum. The idea was to create a tribute page, with an image that would resize
             according to the screen and comprehensive HTML for accessibility. I have used pseudo-selectors for creating pulling
