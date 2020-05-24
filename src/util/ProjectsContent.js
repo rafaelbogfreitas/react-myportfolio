@@ -7,6 +7,56 @@ import img6 from '../images/formproject.png';
 import img7 from '../images/tributePage.png';
 
 const ProjectsContent = [
+  {
+    title: 'T!PE Game',
+
+    href: 'https://typegame.netlify.app',
+
+    linkGitHub:'https://github.com/rafaelbogfreitas/type-game',
+
+    alt: 'pic of JWorldMusic front page',
+
+    extraLink: true,
+
+    imgSrc: 'https://media.giphy.com/media/RibdPww2KL1PBgLjXC/giphy.gif',
+
+    paragraphs: [
+      {
+        ptbr: "",
+        eng: `Project developed for a client who works as a musician.
+        He asked me for a website where he could show his music and videos and have a short 'about me'
+        to introduce himself and work. He had no idea of how he wanted it to look like, so I also
+        designed the page.`
+      },
+      {
+        ptbr: "",
+        eng: `In this project, I was more advanced with SASS, JavaScript and JQuery, so I had liberty
+        for getting more creative. Mixins were used to automate the inclusion of vendor prefixes for flex-box.
+        With JQuery and JavaScript, I designed a simple song player which uses Mustache template to create the markup
+        for every song. To create the player logics was probably the most
+        challenging part of the project.`
+      }  
+    ],
+
+    extraParagraph: [
+      {
+        ptbr:`Teste teste teste`,
+        eng:`I was also comfortable with GULP and organized my working environment with modules and partials
+        to keep the code  maintainable. I set up commands to minify all the code and pipe it to a distribution
+        folder which I am hosting on Netlify. Website is live at:`
+      }
+    ],
+
+    technologies: [
+        'HTML5',
+        'SASS with COMPASS',
+        'JavaScript',
+        'JQuery',
+        'NPM (gulp-uglify, concat, compass, html-minify, cssnano)',
+        'Mustache.js'
+    ]
+},
+
     {
         title: 'J World Music',
 
