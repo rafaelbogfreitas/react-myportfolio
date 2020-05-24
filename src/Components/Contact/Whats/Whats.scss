@@ -1,0 +1,15 @@
+@import '../../../index.scss';
+
+.whats-container {
+    width: 45%;
+
+    @include flex(display, flex);
+    @include flex(justify-content, center);
+    @include flex(align-items, center);
+
+
+    i {
+        font-size: $font-xlarge * 1.5;
+        color: white;
+    }
+}
