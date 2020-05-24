@@ -311,7 +311,7 @@ const ProjectsContent = [
 
         paragraphs: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`Quando comecei a aprender Desenvolvimento Web por iniciativa própria, decidi seguir o curriculum do site 'Free Code Camp', focado em Desenvolvimento Full-Stack com JavaScript. O primeiro curso do 6 que eles oferecem foi essencial pra trilhar meu caminho como Desenvolvedor já que aprendi conceitos básicos porém essenciais como Responsividade, Acessibilidade e HTML semântico. Assim como a importância de escrever código organizado e fácil de manter.`,
             eng:`This is my first project ever, when I decided to take on the Free Code Camp's
             responsive web development curriculum. The idea was to create a tribute page, with an image that would resize
             according to the screen and comprehensive HTML for accessibility. I have used pseudo-selectors for creating pulling
@@ -321,7 +321,7 @@ const ProjectsContent = [
 
         extraParagraph: [
           {
-            ptbr:`Teste teste`,
+            ptbr:`Esse foi o primeiro projeto que fiz e o mantenho aqui por fazer parte da minhas história e contar como foi minha evolução.`,
             eng:``
           }
         ],
