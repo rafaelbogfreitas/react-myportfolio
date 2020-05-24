@@ -166,11 +166,12 @@ const ProjectsContent = [
 
         extraLink: false,
 
-        imgSrc: img3,
+        // imgSrc: img3,
+        imgSrc:'https://media.giphy.com/media/jpt0G3meDgnrkTeX2o/giphy.gif',
 
         paragraphs: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`Esse foi meu primeiro trabalho como freelance e meu primeiro grande desafio para a época. Me procuraram para criar um website minimalista para um portfólio de fotografia com um tema desestruturado. O cliente pediu para que apenas seu nome aparecesse no projeto, sem nenhum detalhe sobre ele ou sobre as fotos, e apenas um formulário de contato que envia-se emails. Ele também queria um carrossel de imagens quando o usuário clicasse em qualquer uma das fotos.`,
             eng:`This was a project designed to meet the client's requirement of a minimalistic photography
             portfolio, laying the photos on the page in an unstructured way, overlaying on some points
             across the website. The client requested to have only his initials displayed on the page and
@@ -179,7 +180,7 @@ const ProjectsContent = [
             entire page.`
           },
           {
-            ptbr:`test teste teste`,
+            ptbr:`Para desenvolver o projeto, utilizei um arquivo JSON com informações sobre cada uma das imagens e um template de Mustache.js para renderizá-las, construindo o HTML dinamicamente. Para o layout aprendi como funcionava o Grid do CSS e o utilizei para posicionar as imagens livremente pela página com uma função de SASS que renderizava todas as regras de posicionamento no grid usando uma lista de posições. O desenvolvimento está todo documentado no README do projeto.`,
             eng:`To develop this project I created a data.json file containing an array of objects.
             Each of them contains data about the photos, and using a Mustache template looping over
             the array, the bulk of the HTML was built automatically. Laying the pictures was done using
@@ -191,14 +192,14 @@ const ProjectsContent = [
 
         extraParagraph: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`O maior desafio foi construir um carousel usando apenas Javascript e um pouco de JQuery, sem ajuda de nenhuma library. Para conseguir utilizar 'requires' e componentizar os scripts, utilizei Browserify. Foi também minha primeira experiência com um task runner, Gulp, para criar uma versão de produção toda minificada e compilar os arquivos .scss.`,
             eng:`Browserify was used to create modules for the scripts, keeping features separate during the
             development and joining all the files into a bundle.js to sent to distribution. JQuery was used
             to simplify the creation of some features, like the carousel. Gulp task runner was used to minify
             all the files across the project and create an optimized version to be deployed on Netlify.`,
           },
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`Esse projeto foi um grande desafio, onde tive que me provar capaz e aprender tecnologias que não conhecia rapidamente para encontrar soluções. Foi uma experiência rica que me fez crescer muito como desenvolvedor.`,
             eng:`The project might expand on the future with the creation of different photography collections,
             each with a different pattern of display.`
           }
