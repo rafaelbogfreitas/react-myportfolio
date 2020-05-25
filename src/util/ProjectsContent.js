@@ -58,18 +58,19 @@ const ProjectsContent = [
 
         extraLink: true,
 
-        imgSrc: img1,
+        // imgSrc: img1,
+        imgSrc:'https://media.giphy.com/media/RN7a69cMiMD1hRPMXu/giphy.gif',
 
         paragraphs: [
           {
-            ptbr: "",
+            ptbr: "Projeto criado para um cliente que é músico em Londres. A idéia era entregar uma página estática para divulgar seus videos e músicas, uma sessão de about e um formulário de contato. O cliente não possuia um Design e não tinha idéia de como gostaria do site visualmente, então eu também aceitei o desafio de criar o Design da página.",
             eng: `Project developed for a client who works as a musician.
             He asked me for a website where he could show his music and videos and have a short 'about me'
             to introduce himself and work. He had no idea of how he wanted it to look like, so I also
             designed the page.`
           },
           {
-            ptbr: "",
+            ptbr: "Como já estava mais avançado no domínio de tecnologias como JavaScript, JQuery e SASS, tive liberdade de explorar o desenvolvimento do projeto de maneira criativa. Utilizei Mixins de SASS pra incluir vendor prefixes e deixar o site compatível com a maior quantidade de modelos de browsers possível. Consultei a página Can I Use para me inteirar da compatibilidade global entre browsers das tecnologias que utilizei.",
             eng: `In this project, I was more advanced with SASS, JavaScript and JQuery, so I had liberty
             for getting more creative. Mixins were used to automate the inclusion of vendor prefixes for flex-box.
             With JQuery and JavaScript, I designed a simple song player which uses Mustache template to create the markup
@@ -80,7 +81,7 @@ const ProjectsContent = [
 
         extraParagraph: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`O maior desafio, que concluí com sucesso, foi a criação de um song player personalizado utilizando apenas JavaScript e CSS. Organizei o ambiente de desenvolvimento com Gulp e os estilos com Sass partials para manter o código modular e de fácil manutenção. A página se encontra no dominío: `,
             eng:`I was also comfortable with GULP and organized my working environment with modules and partials
             to keep the code  maintainable. I set up commands to minify all the code and pipe it to a distribution
             folder which I am hosting on Netlify. Website is live at:`
@@ -100,7 +101,7 @@ const ProjectsContent = [
     {
         title: 'Rafael Freitas Web Development - Portfolio',
 
-        href: 'https://www.rafaelfreitas.co.uk/',
+        href: 'https://www.rafaelfreitas.com.br/',
 
         linkGitHub:`https://github.com/rafaelbogfreitas/react-myportfolio`,
 
@@ -108,11 +109,12 @@ const ProjectsContent = [
 
         extraLink: false,
 
-        imgSrc: img2,
+        // imgSrc: img2,
+        imgSrc:'https://media.giphy.com/media/fWAm9dAYAwhOmPGI05/giphy.gif',
 
         paragraphs: [
           {
-            ptbr:`Teste teste teste`,
+            ptbr:`O projeto é meu portfólio de Desenvolvedor`,
             eng:`A personal website, initially built with CSS/SASS and JQuery used to display/hide different 
             sessions based on the navigation. While talking to a friend who works as a web developer, I 
             soon realized I had a routing problem and that building the functionality likewise wasn't a 
@@ -121,14 +123,14 @@ const ProjectsContent = [
             and as a way to develop my skills with the technology.`
           },
           {
-            ptbr:`Teste teste teste`,
+            ptbr:``,
             eng:`Now the navigation bar reflects the session of the page where the user is currently navigating 
             and the back and forward arrows work as they should. All the data on the website is recorded in 
             JavaScript objects and React/JSX uses them to build all the markup dynamically and efficiently. 
             ES6+ is used all across the code.`
           },
           {
-            ptbr:`Teste teste teste`,
+            ptbr:``,
             eng:`I have organized the code to keep as many components as possible as stateless functional ones 
             and kept the state stored in just a few key class components. I used prop-types to perform type 
             checking and default props in case props are not passed to components.`
@@ -137,7 +139,7 @@ const ProjectsContent = [
 
         extraParagraph: [
           { 
-            ptbr:`Teste test test`, 
+            ptbr:``, 
             eng: `I have finished reading and learning from a book called 'Learning React' by Kirupa and I am 
             currently reading a more advanced one by Alex Banks and Porcello, so this project's code is 
             improving.`

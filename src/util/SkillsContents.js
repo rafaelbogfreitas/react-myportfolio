@@ -1,6 +1,6 @@
 const SkillsContents = [
     {   
-        'titlept': 'Habilidades',
+        titlept: 'Habilidades',
 
         title: 'Skills',
 
@@ -34,15 +34,30 @@ const SkillsContents = [
             
             {
                 title:`React`,
-                body:`- Basic knowledge. I am currently studying it.`
+                body:`- Classes and Hooks, Functional Programming`
             }, 
+            {
+                title:`Next.JS`,
+                body:`- SSR and SEO friendly React applications`
+            },
             
+            {
+                title:`Node.JS`,
+                body:`- Intermediate knowledge, able to create servers and APIs`
+            },
+            {
+                title:`Express`,
+                body:`- Intermediate knowledge, able to create servers and APIs`
+            },
+            {
+                title:`MongoDB`,
+                body:`- Intermediate knowledge, able to create Non-relational DBS with Schemas and use tools like Mongoose, Compass and Atlas`
+            },
             {
                 title:`Command Line`,
                 body:`- Intermediate knowledge. Can use it for navigating in the computer, install programs, create files and use tools
                 like GREP, SED, etc.`
             }, 
-            
             {
                 title:`Git`,
                 body:`- Intermediate Knowledge. Able to create and clone repositories, push changes to a remote, commit with clear comments,
@@ -55,7 +70,7 @@ const SkillsContents = [
             }, 
             
             {
-                title:`Firefox Dev Tool`,
+                title:`Firefox Dev Tools`,
                 body:`- Ability with the CSS Grid and Flexbox inspectors, also able to use it to create bezier-curve for animations`
             }
         ],
