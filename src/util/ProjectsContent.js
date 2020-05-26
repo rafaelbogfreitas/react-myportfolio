@@ -1,12 +1,99 @@
-import img1 from '../images/jWebsite.png';
-import img2 from '../images/webPortfolio.png';
-import img3 from '../images/arturasgrimalis.png';
+// import img1 from '../images/jWebsite.png';
+// import img2 from '../images/webPortfolio.png';
+// import img3 from '../images/arturasgrimalis.png';
 import img4 from '../images/technicaldoc.png';
 import img5 from '../images/productLanding.png';
 import img6 from '../images/formproject.png';
 import img7 from '../images/tributePage.png';
 
 const ProjectsContent = [
+  // {
+  //   title: 'Meu Carrinho',
+
+  //   href: 'https://meu-carrinho.now.sh',
+
+  //   linkGitHub:'https://github.com/rafaelbogfreitas/meu-carrinho',
+
+  //   alt: 'gif of sacada do predio landing page',
+
+  //   extraLink: false,
+
+  //   imgSrc: 'https://media.giphy.com/media/dx6sS6rcIywgcskLMK/giphy.gif',
+
+  //   paragraphs: [
+  //     {
+  //       ptbr: "",
+  //       eng: ``
+  //     },
+  //     {
+  //       ptbr: "",
+  //       eng: ``
+  //     }  
+  //   ],
+
+  //   extraParagraph: [
+  //     {
+  //       ptbr:``,
+  //       eng:``
+  //     }
+  //   ],
+
+  //   technologies: [
+  //     'NextJS',
+  //     'React (Hooks)',
+  //     'Cypress',
+  //     'Express',
+  //     'MongoDB',
+  //     'JavaScript',
+  //     'CSS3/SASS',
+  //     'HTML5',
+  //   ]
+  // }, 
+  {
+    title: 'Sacada do Prédio - Ajude pessoas na sua comunidade',
+
+    href: 'https://www.sacadadopredio.com',
+
+    linkGitHub:'https://github.com/rafaelbogfreitas/sacada_do_predio',
+
+    alt: 'gif of sacada do predio landing page',
+
+    extraLink: false,
+
+    imgSrc: 'https://media.giphy.com/media/Rm2EJwLbTonc1UmZLP/giphy.gif',
+
+    paragraphs: [
+      {
+        ptbr: "A nova realidade que a pandemia nos trouxe, com o isolamento social afastando pessoas e criando dificuldades diversas, tanto profissionais quanto pessoais, foi a inspiração inicial para esse projeto. O nome, sacada do prédio, nasceu das cenas simbólicas de pessoas em diversos lugares do mundo recorrendo recorrendo às sacadas para todo tipo de atividades sociais.",
+        eng: `The new reality the pandemic has brought us, like the social distancing and many other difficulties, was the initial inspiration for the project. The name, Sacada do Prédio, was born from the many scenes, from all over the world, of people using their balconies for all types of social interactions.`
+      },
+      {
+        ptbr: "A plataforma serve para unir pessoas que querem ajudar/ser ajudadas dentro de sua comunidade. Para atingir esse objetivos, utilizamos a API google maps em conjunto com a Places API para cadastrar pessoas pelo endereço e encontrar casos nas suas proximidades utilizando Geocodificação com filtros da DB não relacional MongoDB. Acessando a plataforma, o usuário tem o mapa centralizado a partir de sua localização e acesso a todos os casos postados num raio de 5 km. Podendo, assim, entrar em contato e oferecer ajuda.",
+        eng: `The app proposal is to unite locals that need help or who are willing to help people going through hardships or difficulties. To achieve this goal we used Google maps and places APIs, plus geocoding and MongoDB to filter posts within a 5km radius and to bring to the user cases which are relevant to his surroundings, so he could therefore, contact people nearby and offer help. `
+      }  
+    ],
+
+    extraParagraph: [
+      {
+        ptbr:`Em duas semanas de trabalho duro, decidimos que o projeto tinha um ótimo propósito e potencial, e nos desafiamos a comprar um domínio e uma máquina na Digital Ocean para administrarmos nosso próprio servidor e aprender como efetuar um deploy utilizando PM2, Nodejs e Nginx. A repercursão foi muito positiva e sigo trabalhando no projeto com meu parceiro Daniel Paiva. `,
+        eng:`Within 2 weeks of hard work, we decided to pay for a server at Digital Ocean and deploy the project to the real world using pm2, nodejs and nginx, as we believed the project has lots of potencial. The repercursion after we delivered it has been very positive and me and my partner Daniel Paiva are still working on it.`
+      }
+    ],
+
+    technologies: [
+      'NodeJS',
+      'Express',
+      'MongoDB',
+      'Google map and places API',
+      'Geocoding',
+      'OG tags and SEO friendly',
+      'Handlebars',
+      'JavaScript',
+      'CSS3/SASS - Flexbox, KeyFrames',
+      'HTML5',
+    ]
+  }, 
+
   {
     title: 'T!PE Game',
 
@@ -114,7 +201,8 @@ const ProjectsContent = [
 
         paragraphs: [
           {
-            ptbr:`O projeto é meu portfólio de Desenvolvedor`,
+            ptbr:`O projeto é meu portfólio de Desenvolvedor, inicialmente construido com JQuery e CSS/SASS, ele ilustra bem minha evolução e minha inclinação para resolver problemas.
+            A página era funcional mas tinha sérios problemas de rotas, que não existiam. Foi quando, depois de conversar com um amigo desenvoldevor, decidi achar uma solução. Descobri o react-router-dom e consequentemente, React. Passei algumas semana estudando a tecnologia todos os os dias e reconstrui todo o site, agora com rotas.`,
             eng:`A personal website, initially built with CSS/SASS and JQuery used to display/hide different 
             sessions based on the navigation. While talking to a friend who works as a web developer, I 
             soon realized I had a routing problem and that building the functionality likewise wasn't a 
@@ -123,14 +211,14 @@ const ProjectsContent = [
             and as a way to develop my skills with the technology.`
           },
           {
-            ptbr:``,
+            ptbr:`A versão de React também evoluiu muito nos 6 meses de sua existência, alterando sintaxe, mudando o gerenciamento de estado de local com classes para centralizado em um componente (lift state up) e também uma branch de Git com uma versão em Hooks.`,
             eng:`Now the navigation bar reflects the session of the page where the user is currently navigating 
             and the back and forward arrows work as they should. All the data on the website is recorded in 
             JavaScript objects and React/JSX uses them to build all the markup dynamically and efficiently. 
             ES6+ is used all across the code.`
           },
           {
-            ptbr:``,
+            ptbr:`Também foram utilizados PropTypes para tipagem. Desde então não deixei de estudar React e JavaScript moderno e tenho me aperfeiçoado cada vez mais.`,
             eng:`I have organized the code to keep as many components as possible as stateless functional ones 
             and kept the state stored in just a few key class components. I used prop-types to perform type 
             checking and default props in case props are not passed to components.`
