@@ -7,48 +7,49 @@ import img6 from '../images/formproject.png';
 import img7 from '../images/tributePage.png';
 
 const ProjectsContent = [
-  // {
-  //   title: 'Meu Carrinho',
+  {
+    title: 'Meu Carrinho',
 
-  //   href: 'https://meu-carrinho.now.sh',
+    href: 'https://meu-carrinho.now.sh',
 
-  //   linkGitHub:'https://github.com/rafaelbogfreitas/meu-carrinho',
+    linkGitHub:'https://github.com/rafaelbogfreitas/meu-carrinho',
 
-  //   alt: 'gif of sacada do predio landing page',
+    alt: 'gif of sacada do predio landing page',
 
-  //   extraLink: false,
+    extraLink: false,
 
-  //   imgSrc: 'https://media.giphy.com/media/dx6sS6rcIywgcskLMK/giphy.gif',
+    imgSrc: 'https://media.giphy.com/media/dx6sS6rcIywgcskLMK/giphy.gif',
 
-  //   paragraphs: [
-  //     {
-  //       ptbr: "",
-  //       eng: ``
-  //     },
-  //     {
-  //       ptbr: "",
-  //       eng: ``
-  //     }  
-  //   ],
+    paragraphs: [
+      {
+        ptbr: "Esse, até o momento, foi o projeto mais desafiador que desenvolvi. Nosso time, durante a escolha de um tema para criar um produto, identificou um ponto em comum na equipe: todos gostariam do desafio de criar um ecommerce mas também tinham medo de cair no cliché e acabar por entregar mais um projeto insoso. A idéia de que a pandemia havia prejudicado muitos vendedores informais, que antes trabalhavam na rua, e que havia um público emergente de vendedores migrando para a internet porém utilizando ferramentas limitadas para esse propósito, nos fez criar o 'Meu Carrinho', Uma plataforma que permite ao usuário criar um carrinho virtual, compartilhar produtos, sua marca e admistrá-lo de maneira simples numa interface minimalista e fácil de utilizar.",
+        eng: `This is my most challenging project so far. Our team, when debating an idea for our final project, realized that all of us were willing to develop an ecommerce but were also afraid of working on something meaningless. As the pandemic had forced informal sellers to stop working and therefore lose their income, a new type of market emerged. People migrating to selling online and using tools which are not fit for the purpose such as WhatsApp or instagram. We then came up with the idea of Meu Carrinho, a virtual cart to help the user administer, sell and share their products with easiness on a minimalist UI.`
+      },
+      {
+        ptbr: "Com a idéia pronta, logo identificamos um problema: o projeto tinha que ser desenvolvido com React, porém sabíamos das limitações que a tecnologia possuí para OG tags e SEO. Decidimos, apesar do prazo de duas semanas para a entrega, entrar em território desconhecido e aprender e utilizar SSR com NextJS para sanar o problema de compartilhamento dinâmico de páginas de lojas ou produtos.",
+        eng: `We soon realized we had a problem: the plataform had to be developed using React but the tecnology has limitations when it comes down to SEO and OG tags. We then took a brave step and bet on learning, in a very short period of time, SSR with NextJS. Our team was well organized and worked hard, about 13 hours a day over a period of 2 weeks, to make that happen. Every problem we had on the way were quickly solved collectively. We also took advantage of TDD and used Cypress for testing end-to-end.`
+      }  
+    ],
 
-  //   extraParagraph: [
-  //     {
-  //       ptbr:``,
-  //       eng:``
-  //     }
-  //   ],
+    extraParagraph: [
+      {
+        ptbr:` O time se organizou e trabalhou duro, cerca de 13 horas por dia, e todos problemas que tínhamos no caminho eram solucionados em conjunto com brain storm. Sabendo da importância do TDD, resolvemos também nos desafiar e utilizar o cypress para realizar testes 'end-to-end' e identificar problemas com mais rapidez. 
+        A conclusão do projeto foi um sucesso e um dia antes da entrega tínhamos nosso MVP pronto e  nossa apresentação. Esse projeto foi um grande marco em minha trajetória como Desenvolvedor, exigindo de mim uma série de soft skills essenciais para um profissional: resiliência, dedicação, trabalho em conjunto, planejamento etc.`,
+        eng:`The project was delivered susccessfully and a day before the due date we had already finished the MVP.`
+      }
+    ],
 
-  //   technologies: [
-  //     'NextJS',
-  //     'React (Hooks)',
-  //     'Cypress',
-  //     'Express',
-  //     'MongoDB',
-  //     'JavaScript',
-  //     'CSS3/SASS',
-  //     'HTML5',
-  //   ]
-  // }, 
+    technologies: [
+      'NextJS',
+      'React (Hooks)',
+      'Cypress',
+      'Express',
+      'MongoDB',
+      'JavaScript',
+      'CSS3/SASS',
+      'HTML5',
+    ]
+  }, 
   {
     title: 'Sacada do Prédio - Ajude pessoas na sua comunidade',
 
@@ -64,7 +65,7 @@ const ProjectsContent = [
 
     paragraphs: [
       {
-        ptbr: "A nova realidade que a pandemia nos trouxe, com o isolamento social afastando pessoas e criando dificuldades diversas, tanto profissionais quanto pessoais, foi a inspiração inicial para esse projeto. O nome, sacada do prédio, nasceu das cenas simbólicas de pessoas em diversos lugares do mundo recorrendo recorrendo às sacadas para todo tipo de atividades sociais.",
+        ptbr: "A nova realidade que a pandemia nos trouxe, com o isolamento social afastando pessoas e criando dificuldades diversas, tanto profissionais quanto pessoais, foi a inspiração inicial para esse projeto. O nome, sacada do prédio, nasceu das cenas simbólicas de pessoas em diversos lugares do mundo recorrendo às sacadas para todo tipo de atividades sociais.",
         eng: `The new reality the pandemic has brought us, like the social distancing and many other difficulties, was the initial inspiration for the project. The name, Sacada do Prédio, was born from the many scenes, from all over the world, of people using their balconies for all types of social interactions.`
       },
       {
